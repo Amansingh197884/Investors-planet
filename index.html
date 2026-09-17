@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investors Planet Realty</title>
+
+    <!-- links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. NAVBAR SECTION -->
+    <nav class="top-navbar-wrapper" id="topNavbar">
+        <a href="#heroSection" class="navbar-logo-tab">
+            <img src="https://investorsplanet.co.in/assets/images/Logo/logo-in.jpeg" alt="Investors Planet Realty Logo">
+        </a>
+
+        <div class="center-nav-links">
+            <a href="#heroSection" class="nav-tab-item active">Home</a>
+
+            <div class="nav-dropdown-wrapper">
+                <a href="#heroSection" class="nav-tab-item">
+                    Property <i class="bi bi-chevron-down" style="font-size: 0.65rem;"></i>
+                </a>
+                <div class="nav-dropdown-menu">
+                    <a href="#heroSection" class="nav-dropdown-item">Commercial</a>
+                    <a href="#heroSection" class="nav-dropdown-item">Residential</a>
+                </div>
+            </div>
+
+            <a href="#about" class="nav-tab-item">About Us</a>
+            <a href="#exploreCategories" class="nav-tab-item">Categories</a>
+            <a href="#mostSellingProjects" class="nav-tab-item">Projects</a>
+            <a href="#realEstateBlogs" class="nav-tab-item">Blogs</a>
+            <a href="#siteFooter" class="nav-tab-item">Contact Us</a>
+        </div>
+
+        <div class="navbar-right-actions">
+            <button class="nav-search-btn" title="Search" aria-label="Search">
+                <i class="bi bi-search"></i>
+            </button>
+            <a href="#siteFooter" class="nav-enquire-btn">
+                Enquire Now <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <button class="mobile-hamburger-btn" id="menuToggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="mobile-nav-drawer" id="mobileDrawer">
+        <button class="drawer-close-btn" id="drawerClose" aria-label="Close Navigation">&times;</button>
+        <ul class="drawer-links">
+            <li><a href="#heroSection" class="mobile-menu-link">Home</a></li>
+            <li><a href="#heroSection" class="mobile-menu-link">Property - Commercial</a></li>
+            <li><a href="#heroSection" class="mobile-menu-link">Property - Residential</a></li>
+            <li><a href="#about" class="mobile-menu-link">About Us</a></li>
+            <li><a href="#exploreCategories" class="mobile-menu-link">Categories</a></li>
+            <li><a href="#mostSellingProjects" class="mobile-menu-link">Projects</a></li>
+            <li><a href="#realEstateBlogs" class="mobile-menu-link">Blogs</a></li>
+            <li><a href="#siteFooter" class="mobile-menu-link">Contact Us</a></li>
+        </ul>
+        <div class="drawer-contact-box">
+            <a href="#siteFooter" class="nav-enquire-btn w-100 justify-content-center">
+                Enquire Now <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </aside>
+
+    <!-- 2 HERO SLIDER SECTION -->
+    <section class="hero-slider-section" id="heroSection">
+        <a href="#heroSection" class="right-bottom-project-preview">
+            <span class="preview-title">Investors Planet Realty
+            </span>
+            <span class="preview-subtitle">Noida's New Landmark <i class="bi bi-arrow-right"></i></span>
+        </a>
+
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="slide-bg"
+                        style="background-image: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/cullinan_-_xWpN2bljojHt.webp');">
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="container-fluid h-100">
+                        <div class="hero-content-wrapper">
+                            <div class="hero-content">
+                                <h1 class="hero-title animate__animated">
+                                    Stop Searching.
+                                    <span class="golden-line">Start Living.</span>
+                                </h1>
+                                <p class="hero-desc animate__animated">
+                                    Thoughtfully designed spaces for business, living and lifestyle that create value
+                                    for today and generations ahead.
+                                </p>
+                                <div class="hero-action-buttons animate__animated">
+                                    <a href="#exploreCategories" class="btn-explore">
+                                        Explore Properties <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                    <a href="#featuredLandmark" class="btn-outline-custom">
+                                        Watch Our Story <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-bg"
+                        style="background-image: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/mansion_-_JCTLohqIUT3m.webp');">
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="container-fluid h-100">
+                        <div class="hero-content-wrapper">
+                            <div class="hero-content">
+                                <h1 class="hero-title animate__animated">
+                                    Future-Ready
+                                    <span class="golden-line">For Your Business.</span>
+                                </h1>
+                                <p class="hero-desc animate__animated">
+                                    Strategic commercial locations equipped with high footfall, modern infrastructure,
+                                    and ultimate business growth potential.
+                                </p>
+                                <div class="hero-action-buttons animate__animated">
+                                    <a href="#exploreCategories" class="btn-explore">
+                                        Explore Properties <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                    <a href="#mostSellingProjects" class="btn-outline-custom">
+                                        View All Projects <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide-bg"
+                        style="background-image: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/cullinan_-_xWpN2bljojHt.webp');">
+                    </div>
+                    <div class="slide-overlay"></div>
+                    <div class="container-fluid h-100">
+                        <div class="hero-content-wrapper">
+                            <div class="hero-content">
+                                <h1 class="hero-title animate__animated">
+                                    Crafting Icons.
+                                    <span class="golden-line">Redefining Luxury.</span>
+                                </h1>
+                                <p class="hero-desc animate__animated">
+                                    Experience unmatched architectural brilliance built with high-end luxury, modern
+                                    spaces, and world-class private amenities.
+                                </p>
+                                <div class="hero-action-buttons animate__animated">
+                                    <a href="#exploreCategories" class="btn-explore">
+                                        Explore Properties <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                    <a href="#mostSellingProjects" class="btn-outline-custom">
+                                        View All Projects <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hero-stats-bar">
+            <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Years of Legacy</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Landmark Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">10M+</span>
+                <span class="stat-label">Sq. Ft. Delivered</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">11L+</span>
+                <span class="stat-label">Happy Customers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ABOUT US SECTION -->
+    <section class="about-us-section" id="about">
+        <div class="container-fluid px-3 px-md-4 px-lg-5">
+            <div class="row align-items-center g-4 g-xl-5">
+
+                <div class="col-lg-6 about-left-col">
+                    <span class="section-top-tag scroll-reveal" data-animation="animate__fadeInUp">WHO WE ARE</span>
+                    <h2 class="section-unified-heading scroll-reveal" data-animation="animate__fadeInUp">About Us</h2>
+
+                    <div class="rera-info scroll-reveal" data-animation="animate__fadeInUp">
+                        <span class="rera-label">RERA NO. :</span>
+                        <span class="rera-code">UPRERAAGT000235/11/2025</span>
+                    </div>
+
+                    <p class="about-desc scroll-reveal" data-animation="animate__fadeInUp">
+                        Investors Planet Realty is a full-service company for all your real estate needs. Whether you're
+                        looking to buy or sell a home, invest in real estate, or need property management services, our
+                        experienced team is here to help you every step of the way. Our deep knowledge of the local
+                        market allows us to confidently guide you through the chaos of the real estate world.
+                    </p>
+
+                    <p class="about-desc scroll-reveal" data-animation="animate__fadeInUp">
+                        Our commitment to providing personalized service to each customer sets us apart. We take the
+                        time to understand your unique goals, preferences and tailor our services accordingly. In
+                        addition to traditional real estate services, we also specialize in helping investors make
+                        profitable investments. We recognize the importance of real estate investing as a means of
+                        generating income and building wealth, and we have the expertise and experience to help you make
+                        your investment decisions.
+                    </p>
+
+                    <div class="about-btn-wrap scroll-reveal" data-animation="animate__fadeInUp">
+                        <a href="#siteFooter" class="btn-know-more">
+                            <span>KNOW MORE</span>
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 about-right-col">
+                    <div class="about-image-card scroll-reveal" data-animation="animate__fadeInRight">
+                        <div class="image-wrapper">
+                            <img src="https://i.pinimg.com/736x/a8/ac/7f/a8ac7f24139de75a7043507da3dbb99f.jpg"
+                                alt="Investors Planet Realty Experience" />
+                        </div>
+
+                        <div class="floating-excellence-badge scroll-reveal" data-animation="animate__zoomIn">
+                            <div class="badge-top">
+                                <span class="badge-number">25<sup>+</sup></span>
+                                <span class="badge-text">YEARS OF<br>EXCELLENCE</span>
+                            </div>
+                            <a href="#featuredLandmark" class="badge-link">
+                                <span>Watch Video</span>
+                                <i class="bi bi-play-circle-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. EXPLORE BY CATEGORY SECTION -->
+    <section class="project-categories-section py-5 theme-dark" id="exploreCategories">
+        <div class="container-fluid px-lg-5 px-3">
+
+            <div class="project-cat-header-wrap mb-4">
+                <div class="project-cat-title-block scroll-reveal" data-animation="animate__fadeInLeft">
+                    <span class="section-top-tag">EXPLORE BY CATEGORY</span>
+                    <h2 class="section-unified-heading text-white">Spaces for Every Possibility</h2>
+                </div>
+
+                <div class="project-cat-controls-block scroll-reveal" data-animation="animate__fadeInRight">
+                    <p class="project-cat-tagline">
+                        From premium workspaces to iconic residences, explore spaces designed for modern living.
+                    </p>
+
+                    <div class="project-slider-arrows">
+                        <button class="project-nav-trigger project-prev-btn" type="button" aria-label="Previous">
+                            <span class="arrow-orbit-ring"></span>
+                            <span class="arrow-icon-wrap">
+                                <i class="bi bi-chevron-left"></i>
+                            </span>
+                        </button>
+                        <button class="project-nav-trigger project-next-btn" type="button" aria-label="Next">
+                            <span class="arrow-orbit-ring"></span>
+                            <span class="arrow-icon-wrap">
+                                <i class="bi bi-chevron-right"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper projectCategorySlider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="property.html" class="project-showcase-tile scroll-reveal"
+                            data-animation="animate__fadeInUp">
+                            <div class="project-tile-media">
+                                <img src="https://i.pinimg.com/736x/68/a8/88/68a88817c9050d8937019f63d39efa8c.jpg"
+                                    alt="Commercial" class="project-tile-visual">
+                                <div class="project-tile-backdrop"></div>
+                                <div class="project-tile-blur-overlay"></div>
+                            </div>
+
+                            <div class="project-center-plus">
+                                <span class="project-pulse-wave"></span>
+                                <span class="project-pulse-wave delay"></span>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+
+                            <div class="project-tile-bottom-bar">
+                                <div class="project-bar-left">
+                                    <span class="project-count-tag">12+ Properties</span>
+                                    <h3 class="project-bar-title">Commercial</h3>
+                                    <p class="project-bar-sub">Workspaces for tomorrow's business leaders</p>
+                                </div>
+                                <span class="project-bar-arrow">
+                                    <span class="bar-arrow-aura"></span>
+                                    <i class="bi bi-arrow-up-right main-arrow"></i>
+                                    <i class="bi bi-arrow-up-right clone-arrow"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="residental.html" class="project-showcase-tile scroll-reveal"
+                            data-animation="animate__fadeInUp">
+                            <div class="project-tile-media">
+                                <img src="https://i.pinimg.com/1200x/0e/28/10/0e281031130ed455cd875e7eabe86943.jpg"
+                                    alt="Residential" class="project-tile-visual">
+                                <div class="project-tile-backdrop"></div>
+                                <div class="project-tile-blur-overlay"></div>
+                            </div>
+
+                            <div class="project-center-plus">
+                                <span class="project-pulse-wave"></span>
+                                <span class="project-pulse-wave delay"></span>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+
+                            <div class="project-tile-bottom-bar">
+                                <div class="project-bar-left">
+                                    <span class="project-count-tag">18+ Properties</span>
+                                    <h3 class="project-bar-title">Residential</h3>
+                                    <p class="project-bar-sub">Homes crafted for balanced luxury living</p>
+                                </div>
+                                <span class="project-bar-arrow">
+                                    <span class="bar-arrow-aura"></span>
+                                    <i class="bi bi-arrow-up-right main-arrow"></i>
+                                    <i class="bi bi-arrow-up-right clone-arrow"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="property.html" class="project-showcase-tile scroll-reveal"
+                            data-animation="animate__fadeInUp">
+                            <div class="project-tile-media">
+                                <img src="https://i.pinimg.com/736x/b8/08/d7/b808d746e11e2a88268e295a4e2df7ee.jpg"
+                                    alt="Luxury Villas" class="project-tile-visual">
+                                <div class="project-tile-backdrop"></div>
+                                <div class="project-tile-blur-overlay"></div>
+                            </div>
+
+                            <div class="project-center-plus">
+                                <span class="project-pulse-wave"></span>
+                                <span class="project-pulse-wave delay"></span>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+
+                            <div class="project-tile-bottom-bar">
+                                <div class="project-bar-left">
+                                    <span class="project-count-tag">06+ Properties</span>
+                                    <h3 class="project-bar-title">Luxury Villas</h3>
+                                    <p class="project-bar-sub">Elite estates with private amenities</p>
+                                </div>
+                                <span class="project-bar-arrow">
+                                    <span class="bar-arrow-aura"></span>
+                                    <i class="bi bi-arrow-up-right main-arrow"></i>
+                                    <i class="bi bi-arrow-up-right clone-arrow"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="property.html" class="project-showcase-tile scroll-reveal"
+                            data-animation="animate__fadeInUp">
+                            <div class="project-tile-media">
+                                <img src="https://i.pinimg.com/736x/2e/1c/e1/2e1ce1e18475a00035cc2ab0f9a0c046.jpg"
+                                    alt="Retail & Studio" class="project-tile-visual">
+                                <div class="project-tile-backdrop"></div>
+                                <div class="project-tile-blur-overlay"></div>
+                            </div>
+
+                            <div class="project-center-plus">
+                                <span class="project-pulse-wave"></span>
+                                <span class="project-pulse-wave delay"></span>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+
+                            <div class="project-tile-bottom-bar">
+                                <div class="project-bar-left">
+                                    <span class="project-count-tag">10+ Properties</span>
+                                    <h3 class="project-bar-title">Retail & Studio</h3>
+                                    <p class="project-bar-sub">Prime high-footfall business venues</p>
+                                </div>
+                                <span class="project-bar-arrow">
+                                    <span class="bar-arrow-aura"></span>
+                                    <i class="bi bi-arrow-up-right main-arrow"></i>
+                                    <i class="bi bi-arrow-up-right clone-arrow"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. FEATURED DEVELOPMENTS SECTION -->
+    <section class="dev-showcase-section py-5" id="mostSellingProjects">
+        <div class="container-fluid px-lg-5 px-3">
+
+            <div class="dev-showcase-header mb-4">
+                <div class="dev-showcase-title-block scroll-reveal" data-animation="animate__fadeInLeft">
+                    <span class="section-top-tag">CURATED DEVELOPMENTS</span>
+                    <h2 class="section-unified-heading">Our Most Loved Projects</h2>
+                </div>
+
+                <div class="dev-showcase-controls-block scroll-reveal" data-animation="animate__fadeInRight">
+                    <p class="dev-showcase-summary">
+                        Architectural brilliance. Prime addresses.<br class="d-none d-md-block"> Enduring asset
+                        appreciation.
+                    </p>
+                    <div class="dev-showcase-arrows">
+                        <button class="dev-nav-trigger dev-prev-btn" type="button" aria-label="Previous">
+                            <span class="dev-orbit-ring"></span>
+                            <span class="dev-arrow-icon"><i class="bi bi-chevron-left"></i></span>
+                        </button>
+                        <button class="dev-nav-trigger dev-next-btn" type="button" aria-label="Next">
+                            <span class="dev-orbit-ring"></span>
+                            <span class="dev-arrow-icon"><i class="bi bi-chevron-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper devShowcaseSwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="dev-luxury-card scroll-reveal" data-animation="animate__fadeInUp" tabindex="0">
+                            <div class="dev-card-ambient-aura"></div>
+                            <div class="dev-card-media">
+                                <img src="https://i.pinimg.com/736x/b0/c7/c9/b0c7c9cdc0c4229f6c91cf94e578a3b9.jpg"
+                                    alt="The Line Avenue">
+                                <span class="dev-card-badge">Commercial</span>
+                                <div class="dev-media-ambient-shadow"></div>
+                            </div>
+
+                            <div class="dev-card-idle-info">
+                                <span class="dev-idle-tag">Sector 129, Noida</span>
+                                <h4 class="dev-idle-title">THE LINE AVENUE</h4>
+                                <div class="dev-idle-indicator">
+                                    <span>Explore</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="dev-reveal-overlay">
+                                <div class="dev-reveal-content">
+                                    <span class="dev-reveal-category">Commercial Landmark</span>
+                                    <h4 class="dev-reveal-title">THE LINE AVENUE</h4>
+                                    <p class="dev-reveal-desc">
+                                        M3M The Line offers a luxurious retail experience with a unique design, high
+                                        street footfall, and elite global business spaces.
+                                    </p>
+                                    <a href="propertydetails.html" class="dev-view-prop-btn">
+                                        <span>View Property</span>
+                                        <div class="dev-btn-circle">
+                                            <i class="bi bi-arrow-up-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="dev-luxury-card scroll-reveal" data-animation="animate__fadeInUp" tabindex="0">
+                            <div class="dev-card-ambient-aura"></div>
+                            <div class="dev-card-media">
+                                <img src="https://i.pinimg.com/1200x/70/3b/2b/703b2bb00e8416c925a79b62b1071aec.jpg"
+                                    alt="The Cullian Avenue">
+                                <span class="dev-card-badge">Residential</span>
+                                <div class="dev-media-ambient-shadow"></div>
+                            </div>
+
+                            <div class="dev-card-idle-info">
+                                <span class="dev-idle-tag">Sector 94, Noida</span>
+                                <h4 class="dev-idle-title">THE CULLIAN AVENUE</h4>
+                                <div class="dev-idle-indicator">
+                                    <span>Explore</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="dev-reveal-overlay">
+                                <div class="dev-reveal-content">
+                                    <span class="dev-reveal-category">Ultra Luxury Living</span>
+                                    <h4 class="dev-reveal-title">THE CULLIAN AVENUE</h4>
+                                    <p class="dev-reveal-desc">
+                                        Sector 94 emerges as a thriving and well linked neighbourhood in Noida,
+                                        featuring bespoke sky residences and curated amenities.
+                                    </p>
+                                    <a href="propertydetails.html" class="dev-view-prop-btn">
+                                        <span>View Property</span>
+                                        <div class="dev-btn-circle">
+                                            <i class="bi bi-arrow-up-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="dev-luxury-card scroll-reveal" data-animation="animate__fadeInUp" tabindex="0">
+                            <div class="dev-card-ambient-aura"></div>
+                            <div class="dev-card-media">
+                                <img src="https://i.pinimg.com/1200x/bc/52/3a/bc523a431e3f7c31cb2e12f6df5b1e3e.jpg"
+                                    alt="Bhutani Grandthum">
+                                <span class="dev-card-badge">Commercial</span>
+                                <div class="dev-media-ambient-shadow"></div>
+                            </div>
+
+                            <div class="dev-card-idle-info">
+                                <span class="dev-idle-tag">Greater Noida West</span>
+                                <h4 class="dev-idle-title">BHUTANI GRANDTHUM</h4>
+                                <div class="dev-idle-indicator">
+                                    <span>Explore</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="dev-reveal-overlay">
+                                <div class="dev-reveal-content">
+                                    <span class="dev-reveal-category">Commercial Hub</span>
+                                    <h4 class="dev-reveal-title">BHUTANI GRANDTHUM</h4>
+                                    <p class="dev-reveal-desc">
+                                        Bhutani Grandthum is an iconic commercial property engineered for high-yielding
+                                        retail spaces, hypermarkets, and modern corporate setups.
+                                    </p>
+                                    <a href="propertydetails.html" class="dev-view-prop-btn">
+                                        <span>View Property</span>
+                                        <div class="dev-btn-circle">
+                                            <i class="bi bi-arrow-up-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="dev-luxury-card scroll-reveal" data-animation="animate__fadeInUp" tabindex="0">
+                            <div class="dev-card-ambient-aura"></div>
+                            <div class="dev-card-media">
+                                <img src="https://i.pinimg.com/736x/51/43/db/5143db872b7fb3381221c654d87d4bf9.jpg"
+                                    alt="Godrej Majesty">
+                                <span class="dev-card-badge">Residential</span>
+                                <div class="dev-media-ambient-shadow"></div>
+                            </div>
+
+                            <div class="dev-card-idle-info">
+                                <span class="dev-idle-tag">Greater Noida Sec 12</span>
+                                <h4 class="dev-idle-title">GODREJ MAJESTY</h4>
+                                <div class="dev-idle-indicator">
+                                    <span>Explore</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="dev-reveal-overlay">
+                                <div class="dev-reveal-content">
+                                    <span class="dev-reveal-category">Serene Residences</span>
+                                    <h4 class="dev-reveal-title">GODREJ MAJESTY</h4>
+                                    <p class="dev-reveal-desc">
+                                        Godrej Majesty is a tranquil residential haven nestled in Greater Noida Sec 12,
+                                        offering green landscapes and grand clubhouse amenities.
+                                    </p>
+                                    <a href="propertydetails.html" class="dev-view-prop-btn">
+                                        <span>View Property</span>
+                                        <div class="dev-btn-circle">
+                                            <i class="bi bi-arrow-up-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="dev-luxury-card scroll-reveal" data-animation="animate__fadeInUp" tabindex="0">
+                            <div class="dev-card-ambient-aura"></div>
+                            <div class="dev-card-media">
+                                <img src="https://i.pinimg.com/736x/d2/3e/b3/d23eb3abe1b45a3c89cd017f8275d1ce.jpg"
+                                    alt="AU Sunflower Aditya World City">
+                                <span class="dev-card-badge">Residential</span>
+                                <div class="dev-media-ambient-shadow"></div>
+                            </div>
+
+                            <div class="dev-card-idle-info">
+                                <span class="dev-idle-tag">NH-24, Ghaziabad</span>
+                                <h4 class="dev-idle-title">AU SUNFLOWER ADITYA</h4>
+                                <div class="dev-idle-indicator">
+                                    <span>Explore</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="dev-reveal-overlay">
+                                <div class="dev-reveal-content">
+                                    <span class="dev-reveal-category">Smart Living</span>
+                                    <h4 class="dev-reveal-title">AU SUNFLOWER ADITYA</h4>
+                                    <p class="dev-reveal-desc">
+                                        AU Sunflower Aditya World City is a premium residential property spot in
+                                        Ghaziabad with integrated smart infrastructure and fast connectivity.
+                                    </p>
+                                    <a href="propertydetails.html" class="dev-view-prop-btn">
+                                        <span>View Property</span>
+                                        <div class="dev-btn-circle">
+                                            <i class="bi bi-arrow-up-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="dev-luxury-card scroll-reveal" data-animation="animate__fadeInUp" tabindex="0">
+                            <div class="dev-card-ambient-aura"></div>
+                            <div class="dev-card-media">
+                                <img src="https://i.pinimg.com/736x/e6/98/5a/e6985af2b01548a1c4b19c9d69201688.jpg"
+                                    alt="EROS">
+                                <span class="dev-card-badge">Residential</span>
+                                <div class="dev-media-overlay"></div>
+                            </div>
+
+                            <div class="dev-card-idle-info">
+                                <span class="dev-idle-tag">Greater Noida Sec 2</span>
+                                <h4 class="dev-idle-title">EROS SAMPOORNAM</h4>
+                                <div class="dev-idle-indicator">
+                                    <span>Explore</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="dev-reveal-overlay">
+                                <div class="dev-reveal-content">
+                                    <span class="dev-reveal-category">Modern Living</span>
+                                    <h4 class="dev-reveal-title">EROS SAMPOORNAM</h4>
+                                    <p class="dev-reveal-desc">
+                                        Eros Sampoornam is a complete residential property spot in Greater Noida Sec 2,
+                                        meticulously crafted for modern families and wellness.
+                                    </p>
+                                    <a href="propertydetails.html" class="dev-view-prop-btn">
+                                        <span>View Property</span>
+                                        <div class="dev-btn-circle">
+                                            <i class="bi bi-arrow-up-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="dev-luxury-card scroll-reveal" data-animation="animate__fadeInUp" tabindex="0">
+                            <div class="dev-card-ambient-aura"></div>
+                            <div class="dev-card-media">
+                                <img src="https://i.pinimg.com/736x/e9/3b/22/e93b222244bfb3ba30b6781cf7141140.jpg"
+                                    alt="Sobha">
+                                <span class="dev-card-badge">Luxury Living</span>
+                                <div class="dev-media-ambient-shadow"></div>
+                            </div>
+
+                            <div class="dev-card-idle-info">
+                                <span class="dev-idle-tag">Greater Noida Sec 1</span>
+                                <h4 class="dev-idle-title">SOBHA HOMES</h4>
+                                <div class="dev-idle-indicator">
+                                    <span>Explore</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="dev-reveal-overlay">
+                                <div class="dev-reveal-content">
+                                    <span class="dev-reveal-category">Handcrafted Luxury</span>
+                                    <h4 class="dev-reveal-title">SOBHA HOMES</h4>
+                                    <p class="dev-reveal-desc">
+                                        Sobha is a signature luxury residential development offering German
+                                        architectural precision, private sky decks, and unmatched craftsmanship.
+                                    </p>
+                                    <a href="propertydetails.html" class="dev-view-prop-btn">
+                                        <span>View Property</span>
+                                        <div class="dev-btn-circle">
+                                            <i class="bi bi-arrow-up-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="dev-luxury-card scroll-reveal" data-animation="animate__fadeInUp" tabindex="0">
+                            <div class="dev-card-ambient-aura"></div>
+                            <div class="dev-card-media">
+                                <img src="https://i.pinimg.com/1200x/0e/28/10/0e281031130ed455cd875e7eabe86943.jpg"
+                                    alt="Anand Habitat Sahibabad">
+                                <span class="dev-card-badge">Commercial</span>
+                                <div class="dev-media-ambient-shadow"></div>
+                            </div>
+
+                            <div class="dev-card-idle-info">
+                                <span class="dev-idle-tag">Sahibabad Metro Hub</span>
+                                <h4 class="dev-idle-title">ANAND HABITAT</h4>
+                                <div class="dev-idle-indicator">
+                                    <span>Explore</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="dev-reveal-overlay">
+                                <div class="dev-reveal-content">
+                                    <span class="dev-reveal-category">Prime Commercial</span>
+                                    <h4 class="dev-reveal-title">ANAND HABITAT</h4>
+                                    <p class="dev-reveal-desc">
+                                        Anand Habitat Sahibabad offers prominent retail spaces and dynamic business
+                                        offices located right in the core commercial hub of NCR.
+                                    </p>
+                                    <a href="propertydetails.html" class="dev-view-prop-btn">
+                                        <span>View Property</span>
+                                        <div class="dev-btn-circle">
+                                            <i class="bi bi-arrow-up-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="dev-luxury-card scroll-reveal" data-animation="animate__fadeInUp" tabindex="0">
+                            <div class="dev-card-ambient-aura"></div>
+                            <div class="dev-card-media">
+                                <img src="https://i.pinimg.com/736x/b8/08/d7/b808d746e11e2a88268e295a4e2df7ee.jpg"
+                                    alt="Imperial Heights">
+                                <span class="dev-card-badge">Luxury Living</span>
+                                <div class="dev-media-ambient-shadow"></div>
+                            </div>
+
+                            <div class="dev-card-idle-info">
+                                <span class="dev-idle-tag">Expressway, Noida</span>
+                                <h4 class="dev-idle-title">IMPERIAL HEIGHTS</h4>
+                                <div class="dev-idle-indicator">
+                                    <span>Explore</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="dev-reveal-overlay">
+                                <div class="dev-reveal-content">
+                                    <span class="dev-reveal-category">Elite Penthouses</span>
+                                    <h4 class="dev-reveal-title">IMPERIAL HEIGHTS</h4>
+                                    <p class="dev-reveal-desc">
+                                        Imperial Heights features premium ultra-modern penthouses with 360-degree
+                                        panoramic views, private infinity splash pools, and concierge service.
+                                    </p>
+                                    <a href="propertydetails.html" class="dev-view-prop-btn">
+                                        <span>View Property</span>
+                                        <div class="dev-btn-circle">
+                                            <i class="bi bi-arrow-up-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. MARKETED PARTNERS SECTION -->
+    <section class="partners-marquee-section py-5" id="marketedProjects">
+        <div class="container-fluid px-lg-5 px-3">
+
+            <div class="partners-header-row mb-4">
+                <div class="header-left scroll-reveal" data-animation="animate__fadeInLeft">
+                    <span class="section-top-tag">OUR ESTEEMED PARTNERS</span>
+                    <h2 class="section-unified-heading text-white">Marketed Projects</h2>
+                </div>
+
+                <div class="header-right scroll-reveal" data-animation="animate__fadeInRight">
+                    <p class="section-desc-text">
+                        Partnering with leading brands, we bring you the best investment opportunities.
+                    </p>
+                    <div class="swiper-nav-buttons">
+                        <button class="swiper-nav-btn partners-btn-prev" type="button" aria-label="Previous">
+                            <i class="bi bi-arrow-left"></i>
+                        </button>
+                        <button class="swiper-nav-btn partners-btn-next" type="button" aria-label="Next">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper partnersSwiper scroll-reveal" data-animation="animate__fadeInUp">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="partner-logo-card">
+                            <div class="card-glow-bg"></div>
+                            <img src="images/ace.webp" alt="Ace" class="partner-img">
+                            <span class="card-shine-bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="partner-logo-card">
+                            <div class="card-glow-bg"></div>
+                            <img src="images/arihant.webp" alt="Arihant" class="partner-img">
+                            <span class="card-shine-bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="partner-logo-card">
+                            <div class="card-glow-bg"></div>
+                            <img src="images/bhutani.webp" alt="Bhutani" class="partner-img">
+                            <span class="card-shine-bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="partner-logo-card">
+                            <div class="card-glow-bg"></div>
+                            <img src="images/eon.webp" alt="Eon" class="partner-img">
+                            <span class="card-shine-bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="partner-logo-card">
+                            <div class="card-glow-bg"></div>
+                            <img src="images/Godrej-properties-logo-2.webp" alt="Godrej" class="partner-img">
+                            <span class="card-shine-bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="partner-logo-card">
+                            <div class="card-glow-bg"></div>
+                            <img src="images/gygy.webp" alt="Gygy" class="partner-img">
+                            <span class="card-shine-bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="partner-logo-card">
+                            <div class="card-glow-bg"></div>
+                            <img src="images/M3M.webp" alt="M3M" class="partner-img">
+                            <span class="card-shine-bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="partner-logo-card">
+                            <div class="card-glow-bg"></div>
+                            <img src="images/T&T.webp" alt="T&T" class="partner-img">
+                            <span class="card-shine-bar"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. OUR BLOGS SECTION -->
+    <section class="journal-blogs-section py-5" id="realEstateBlogs">
+        <div class="container-fluid px-lg-5 px-3">
+
+            <div class="journal-header-wrap mb-4">
+                <div class="journal-title-col scroll-reveal" data-animation="animate__fadeInLeft">
+                    <span class="section-top-tag">INSIGHTS & PERSPECTIVES</span>
+                    <h2 class="section-unified-heading">Our Blogs</h2>
+                </div>
+
+                <div class="journal-controls-col scroll-reveal" data-animation="animate__fadeInRight">
+                    <p class="journal-subtext">
+                        Stories, market trends and luxury investment perspectives from real estate experts.
+                    </p>
+                    <div class="journal-nav-cluster">
+                        <button class="journal-nav-arrow journal-btn-prev" type="button" aria-label="Previous Blog">
+                            <span class="journal-orbit-ring"></span>
+                            <span class="journal-arrow-icon"><i class="bi bi-chevron-left"></i></span>
+                        </button>
+                        <button class="journal-nav-arrow journal-btn-next" type="button" aria-label="Next Blog">
+                            <span class="journal-orbit-ring"></span>
+                            <span class="journal-arrow-icon"><i class="bi bi-chevron-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper journalBlogsSwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="journal-card scroll-reveal" data-animation="animate__fadeInUp">
+                            <div class="journal-media-wrap">
+                                <img src="https://i.pinimg.com/736x/b9/93/08/b993081e71267a04ce7736938ec39dbf.jpg"
+                                    alt="Bhutani CyberPark" class="journal-img">
+                                <div class="journal-img-veil"></div>
+                                <span class="journal-category-badge">Commercial</span>
+                            </div>
+
+                            <div class="journal-card-body">
+                                <div class="journal-meta-info">
+                                    <span class="journal-date">
+                                        <i class="bi bi-calendar3"></i> Dec 10, 2023
+                                    </span>
+                                    <span class="journal-read-time">4 Min Read</span>
+                                </div>
+
+                                <h3 class="journal-card-title">
+                                    <a href="propertydetails.html">Bhutani CyberPark: Redefining Next-Gen Corporate
+                                        Hubs</a>
+                                </h3>
+
+                                <div class="journal-card-action">
+                                    <a href="propertydetails.html" class="journal-enquire-pill">
+                                        <span>Enquire Now</span>
+                                        <div class="journal-pill-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="journal-card scroll-reveal" data-animation="animate__fadeInUp">
+                            <div class="journal-media-wrap">
+                                <img src="https://i.pinimg.com/736x/0c/f4/79/0cf4791c3fe9e932af38df184352a54e.jpg"
+                                    alt="M3M Noida" class="journal-img">
+                                <div class="journal-img-veil"></div>
+                                <span class="journal-category-badge">Commercial</span>
+                            </div>
+
+                            <div class="journal-card-body">
+                                <div class="journal-meta-info">
+                                    <span class="journal-date">
+                                        <i class="bi bi-calendar3"></i> Jan 21, 2024
+                                    </span>
+                                    <span class="journal-read-time">5 Min Read</span>
+                                </div>
+
+                                <h3 class="journal-card-title">
+                                    <a href="propertydetails.html">M3M Noida: High-Street Retail Investment
+                                        Potential</a>
+                                </h3>
+
+                                <div class="journal-card-action">
+                                    <a href="propertydetails.html" class="journal-enquire-pill">
+                                        <span>Enquire Now</span>
+                                        <div class="journal-pill-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="journal-card scroll-reveal" data-animation="animate__fadeInUp">
+                            <div class="journal-media-wrap">
+                                <img src="https://i.pinimg.com/1200x/a5/fb/9e/a5fb9e481416478ccd709796a3e3a5d2.jpg"
+                                    alt="ACE Group Noida" class="journal-img">
+                                <div class="journal-img-veil"></div>
+                                <span class="journal-category-badge">Residential</span>
+                            </div>
+
+                            <div class="journal-card-body">
+                                <div class="journal-meta-info">
+                                    <span class="journal-date">
+                                        <i class="bi bi-calendar3"></i> Feb 11, 2024
+                                    </span>
+                                    <span class="journal-read-time">3 Min Read</span>
+                                </div>
+
+                                <h3 class="journal-card-title">
+                                    <a href="propertydetails.html">ACE Group Noida: Architectural Elegance Meets
+                                        Comfort</a>
+                                </h3>
+
+                                <div class="journal-card-action">
+                                    <a href="propertydetails.html" class="journal-enquire-pill">
+                                        <span>Enquire Now</span>
+                                        <div class="journal-pill-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- video section  -->
+    <section class="featured-landmark-section" id="featuredLandmark">
+        <div class="landmark-ambient-aura"></div>
+        <div class="landmark-bg-overlay"></div>
+
+        <div class="container-fluid px-lg-5 px-3 position-relative h-100">
+            <div class="row align-items-center justify-content-between g-5">
+
+                <div class="col-lg-6 col-md-12 landmark-left-content scroll-reveal"
+                    data-animation="animate__fadeInLeft">
+                    <div class="landmark-badge-wrap">
+                        <span class="landmark-sub-badge">FEATURED LANDMARK</span>
+                        <span class="landmark-badge-dot"></span>
+                        <span class="landmark-loc-text">Sector 62, Noida</span>
+                    </div>
+
+                    <h2 class="section-unified-heading text-white mb-3">INVESTORS PLANET REALTY</h2>
+
+                    <p class="landmark-description">
+                        A landmark that redefines the future of workspaces and bespoke residences. Experience
+                        innovation, global connectivity, and prime capital growth — all meticulously engineered into one
+                        address.
+                    </p>
+
+                    <div class="landmark-specs-row mb-4">
+                        <div class="landmark-spec-item">
+                            <span class="landmark-spec-val">Grade A</span>
+                            <span class="landmark-spec-lbl">Commercial Tower</span>
+                        </div>
+                        <div class="landmark-spec-sep"></div>
+                        <div class="landmark-spec-item">
+                            <span class="landmark-spec-val">100%</span>
+                            <span class="landmark-spec-lbl">Power & IT Redundancy</span>
+                        </div>
+                        <div class="landmark-spec-sep"></div>
+                        <div class="landmark-spec-item">
+                            <span class="landmark-spec-val">Metro Linked</span>
+                            <span class="landmark-spec-lbl">Prime Access</span>
+                        </div>
+                    </div>
+
+                    <div class="landmark-btn-wrap">
+                        <button type="button" class="landmark-cta-btn" data-bs-toggle="modal"
+                            data-bs-target="#landmarkVideoModal">
+                            <span>Watch Full Story</span>
+                            <div class="landmark-btn-icon">
+                                <i class="bi bi-play-fill"></i>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 scroll-reveal" data-animation="animate__fadeInRight">
+                    <div class="landmark-cinema-frame">
+                        <div class="landmark-frame-media"
+                            style="background-image: url('https://i.pinimg.com/736x/b9/93/08/b993081e71267a04ce7736938ec39dbf.jpg');">
+                            <div class="landmark-frame-sheen"></div>
+                        </div>
+
+                        <div class="landmark-floating-spec">
+                            <i class="bi bi-camera-video-fill me-1"></i> 4K Ultra Tour
+                        </div>
+
+                        <div class="landmark-center-play">
+                            <button type="button" class="play-circle-btn" data-bs-toggle="modal"
+                                data-bs-target="#landmarkVideoModal" aria-label="Play Video">
+                                <span class="landmark-pulse-wave"></span>
+                                <span class="landmark-pulse-wave delay"></span>
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                        </div>
+
+                        <div class="landmark-frame-footer">
+                            <span class="landmark-frame-tag">Cinematic Walkthrough</span>
+                            <span class="landmark-frame-duration"><i class="bi bi-clock me-1"></i> 02:45 Mins</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal fade landmark-video-modal" id="landmarkVideoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-2 p-md-3">
+                    <div class="ratio ratio-16x9 landmark-video-container">
+                        <iframe id="landmarkIframe" src="" title="Investors Planet Realty Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="luxury-footer-section" id="siteFooter">
+        <div class="footer-main-wrap">
+            <div class="container-fluid px-lg-5 px-3">
+                <div class="row g-4 justify-content-between">
+
+                    <div class="col-lg-4 col-md-6 scroll-reveal" data-animation="animate__fadeInUp">
+                        <div class="footer-brand-col">
+                            <a href="index.html" class="footer-logo-wrap text-decoration-none">
+                                <span class="brand-text-logo">INVESTORS PLANET</span>
+                                <span class="brand-sub">REALTY PVT LTD</span>
+                            </a>
+                            <p class="footer-about-text">
+                                Investors Planet Realty is a full-service company for all your real estate needs.
+                                Whether you're looking to buy or sell a home, invest in real estate, or need property
+                                management services.
+                            </p>
+
+                            <div class="footer-social-cluster mb-3">
+                                <a href="#" class="social-icon-btn" aria-label="Facebook"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-icon-btn" aria-label="Instagram"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i
+                                        class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-icon-btn" aria-label="YouTube"><i
+                                        class="bi bi-youtube"></i></a>
+                            </div>
+
+                            <div class="footer-newsletter-wrap mt-2">
+                                <span class="newsletter-heading">Subscribe to Market Trends</span>
+                                <form class="footer-newsletter-form" onsubmit="event.preventDefault();">
+                                    <div class="newsletter-input-group">
+                                        <input type="email" placeholder="Enter your email address..." required>
+                                        <button type="submit" aria-label="Subscribe">
+                                            <i class="bi bi-send-fill"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-6 scroll-reveal" data-animation="animate__fadeInUp">
+                        <div class="footer-links-col">
+                            <h4 class="footer-col-title">Useful Links</h4>
+                            <ul class="footer-links-list">
+                                <li><a href="#heroSection"><i class="bi bi-chevron-right me-1"></i> Home</a></li>
+                                <li><a href="#about"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
+                                <li><a href="#exploreCategories"><i class="bi bi-chevron-right me-1"></i> Categories</a>
+                                </li>
+                                <li><a href="#mostSellingProjects"><i class="bi bi-chevron-right me-1"></i> Projects</a>
+                                </li>
+                                <li><a href="#realEstateBlogs"><i class="bi bi-chevron-right me-1"></i> Blogs</a></li>
+                                <li><a href="#siteFooter"><i class="bi bi-chevron-right me-1"></i> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-6 scroll-reveal" data-animation="animate__fadeInUp">
+                        <div class="footer-links-col">
+                            <h4 class="footer-col-title">Properties</h4>
+                            <ul class="footer-links-list">
+                                <li><a href="property.html"><i class="bi bi-chevron-right me-1"></i> Commercial</a></li>
+                                <li><a href="residental.html"><i class="bi bi-chevron-right me-1"></i> Residential</a>
+                                </li>
+                                <li><a href="property.html"><i class="bi bi-chevron-right me-1"></i> Ready to Move</a>
+                                </li>
+                                <li><a href="property.html"><i class="bi bi-chevron-right me-1"></i> Under
+                                        Construction</a></li>
+                                <li><a href="property.html"><i class="bi bi-chevron-right me-1"></i> Studio
+                                        Apartments</a></li>
+                                <li><a href="property.html"><i class="bi bi-chevron-right me-1"></i> Luxury Villas</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 scroll-reveal" data-animation="animate__fadeInUp">
+                        <div class="footer-contact-col">
+                            <h4 class="footer-col-title">Contact Info</h4>
+
+                            <div class="footer-contact-items">
+                                <div class="f-contact-item">
+                                    <i class="bi bi-telephone-fill f-contact-icon"></i>
+                                    <div class="f-contact-detail">
+                                        <span class="f-contact-label">Phone</span>
+                                        <a href="tel:+919555891638" class="f-link">+91 9555891638</a>
+                                    </div>
+                                </div>
+
+                                <div class="f-contact-item">
+                                    <i class="bi bi-envelope-fill f-contact-icon"></i>
+                                    <div class="f-contact-detail">
+                                        <span class="f-contact-label">Email</span>
+                                        <a href="mailto:info@investorsplanet.co.in"
+                                            class="f-link">info@investorsplanet.co.in</a>
+                                    </div>
+                                </div>
+
+                                <div class="f-contact-item">
+                                    <i class="bi bi-geo-alt-fill f-contact-icon"></i>
+                                    <div class="f-contact-detail">
+                                        <span class="f-contact-label">Address</span>
+                                        <p class="mb-0">G-08, D-216, Block-D, Sector-63, Noida, U.P.-201301</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer-enquire-btn-box mt-4">
+                                <a href="contact.html" class="footer-enquire-pill-btn">
+                                    <span>Enquire Now</span>
+                                    <i class="bi bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="container-fluid px-lg-5 px-3">
+                <div class="row align-items-center gy-3">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="copyright-text mb-0">
+                            Copyright © 2024 | <span class="highlight-txt">Investors Planet</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-legal-links">
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                            <span class="legal-separator">•</span>
+                            <a href="terms.html">Terms & Conditions</a>
+                            <span class="legal-separator">•</span>
+                            <a href="disclaimer.html">RERA Disclaimer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- 11. FLOATING ACTION BUTTON -->
+    <a href="tel:+919555891638" class="floating-call-btn" id="floatingCallBtn" aria-label="Call Us">
+        <div class="call-btn-pulse"></div>
+        <svg data-bbox="27.001 26.499 146.002 147" viewBox="0 0 200 200" height="200" width="200"
+            xmlns="http://www.w3.org/2000/svg" data-type="shape">
+            <g>
+                <path
+                    d="M151.569 118.788a80.618 80.618 0 0 1-17.694-4.429c-6.259-2.364-13.376-.839-18.149 3.903l-6.221 6.252A102.071 102.071 0 0 1 75.47 90.318l6.23-6.26c4.706-4.783 6.225-11.942 3.873-18.23a81.74 81.74 0 0 1-4.414-17.823c-1.196-8.502-8.498-14.864-16.985-14.864l-.168.001H44.173c-.509 0-1.024.024-1.529.07-4.572.415-8.711 2.595-11.653 6.139-2.943 3.546-4.337 8.031-3.917 12.694 2.225 21.051 9.455 41.57 20.891 59.308 10.391 16.434 24.527 30.639 40.848 41.06 17.597 11.468 37.919 18.733 58.844 21.017.515.046 1.036.069 1.553.069h.06c9.478-.039 17.159-7.823 17.121-17.337v-19.879c.191-8.752-6.159-16.267-14.822-17.495zm6.878 17.449v19.941c.02 5.119-4.111 9.3-9.206 9.321a6.703 6.703 0 0 1-.801-.03c-19.623-2.143-38.748-8.98-55.339-19.792-15.374-9.816-28.664-23.171-38.451-38.65C43.872 90.31 37.069 71.005 34.982 51.261a9.253 9.253 0 0 1 2.107-6.779 9.172 9.172 0 0 1 6.271-3.302c.274-.025.549-.038.819-.038h19.958c4.586 0 8.512 3.417 9.149 7.948a89.818 89.818 0 0 0 4.848 19.549c1.264 3.379.448 7.222-2.063 9.773l-8.394 8.435a4.02 4.02 0 0 0-.645 4.811 110.047 110.047 0 0 0 41.147 41.349 3.951 3.951 0 0 0 4.768-.648l8.377-8.419a9.247 9.247 0 0 1 9.768-2.087 88.512 88.512 0 0 0 19.405 4.862c4.649.659 8.067 4.71 7.951 9.423l-.001.099zm-42.722-75.244c-2.153-.422-3.56-2.522-3.14-4.691.418-2.168 2.501-3.587 4.659-3.162 14.866 2.915 26.346 14.453 29.247 29.394.421 2.168-.984 4.269-3.137 4.693a3.937 3.937 0 0 1-.766.075 3.981 3.981 0 0 1-3.895-3.234c-2.278-11.728-11.293-20.786-22.968-23.075zm53.748 26.218a3.983 3.983 0 0 1-4.392-3.528c-2.917-26.076-23.08-46.31-49.034-49.208-2.181-.244-3.753-2.221-3.511-4.416.242-2.196 2.207-3.781 4.386-3.535 29.67 3.312 52.721 26.449 56.055 56.263.245 2.196-1.324 4.176-3.504 4.424z">
+                </path>
+            </g>
+        </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
