@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // new 
-
     const heroSwiper = new Swiper('.heroSwiper', {
         loop: true,
         effect: 'fade',
@@ -34,8 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // new 
-
     const menuToggle = document.getElementById('menuToggle');
     const drawerClose = document.getElementById('drawerClose');
     const mobileDrawer = document.getElementById('mobileDrawer');
@@ -51,8 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuToggle) menuToggle.addEventListener('click', () => toggleMobileMenu(true));
     if (drawerClose) drawerClose.addEventListener('click', () => toggleMobileMenu(false));
     if (drawerOverlay) drawerOverlay.addEventListener('click', () => toggleMobileMenu(false));
-
-    // new 
 
     const topNavbar = document.getElementById('topNavbar');
     const floatingCallBtn = document.getElementById('floatingCallBtn');
@@ -82,8 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateScrollState, { passive: true });
     updateScrollState();
 
-    // new 
-
     const scrollObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -112,7 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'marketedProjects',
         'realEstateBlogs',
         'featuredLandmark',
-        'siteFooter'
+        'siteFooter',
+        'enquiryLocationSection'
     ];
 
     observedSections.forEach(sectionId => {
@@ -122,7 +115,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // new 
+    const allSections = document.querySelectorAll('section, header.about-page-banner, header.career-page-banner, header.testimonials-page-banner, header.contact-page-banner, header.commercial-page-banner, header.residential-page-banner, header.property-detail-page-banner');
+    allSections.forEach(sec => {
+        scrollObserver.observe(sec);
+    });
 
     new Swiper('.projectCategorySlider', {
         slidesPerView: 1.15,
@@ -150,8 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-
-    // new 
 
     new Swiper('.devShowcaseSwiper', {
         slidesPerView: 1.15,
@@ -197,8 +191,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // new 
-
     new Swiper('.partnersSwiper', {
         slidesPerView: 2,
         spaceBetween: 16,
@@ -235,8 +227,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // new 
-
     new Swiper('.journalBlogsSwiper', {
         slidesPerView: 1.15,
         spaceBetween: 18,
@@ -259,7 +249,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // new 
     const landmarkModal = document.getElementById('landmarkVideoModal');
     const landmarkIframe = document.getElementById('landmarkIframe');
     const youtubeVideoUrl = "https://www.youtube.com/embed/Rlj3gzHr7QU?autoplay=1&rel=0&modestbranding=1";
@@ -273,5 +262,89 @@ document.addEventListener('DOMContentLoaded', () => {
             landmarkIframe.setAttribute('src', '');
         });
     }
+
+    new Swiper('.aboutTeamSwiper', {
+        slidesPerView: 1.15,
+        spaceBetween: 18,
+        speed: 800,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 22,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+            }
+        }
+    });
+
+    new Swiper('.testimonialSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        speed: 800,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.testimonial-next-btn',
+            prevEl: '.testimonial-prev-btn',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+            },
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            }
+        }
+    });
+
+    new Swiper('.commercialGridSwiper', {
+        slidesPerView: 1.15,
+        spaceBetween: 18,
+        speed: 850,
+        loop: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        pagination: {
+            el: '.comm-grid-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 28,
+            }
+        }
+    });
 
 });

@@ -1,0 +1,268 @@
+/* ==========================================================
+   COMMERCIAL PAGE BANNER
+   ========================================================== */
+.commercial-page-banner {
+    position: relative;
+    background: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/cullinan_-_xWpN2bljojHt.webp') center/cover no-repeat;
+    padding: 160px 0 90px;
+    color: #ffffff;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(3, 8, 17, 0.9) 0%, rgba(19, 78, 127, 0.8) 100%);
+}
+
+.banner-breadcrumb {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.banner-breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* ==========================================================
+   COMMERCIAL SECTION & SWITCHER STYLING
+   ========================================================== */
+.commercial-multi-section {
+    background-color: var(--light-bg);
+    padding: 85px 0;
+}
+
+.commercial-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.commercial-top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--light-border);
+    padding-bottom: 24px;
+}
+
+.sub-heading-text {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.main-heading-text {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+}
+
+.section-desc-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    margin: 0;
+    max-width: 550px;
+}
+
+.property-type-switcher {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.switcher-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.switcher-buttons {
+    display: inline-flex;
+    align-items: center;
+    background: #e9eff5;
+    padding: 6px;
+    border-radius: 50px;
+    border: 1px solid rgba(19, 78, 127, 0.12);
+    gap: 6px;
+}
+
+.prop-type-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: #475569;
+    padding: 9px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.prop-type-btn:hover {
+    color: var(--primary-color);
+}
+
+.prop-type-btn.active {
+    background: var(--secondary-color);
+    color: #ffffff !important;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(19, 78, 127, 0.3);
+}
+
+.prop-type-btn.active .badge-count {
+    color: var(--accent-gold-light);
+}
+
+.badge-count {
+    font-size: 0.76rem;
+    opacity: 0.85;
+}
+
+/* ==========================================================
+   COMMERCIAL SWIPER CARDS & HOVER EFFECTS
+   ========================================================== */
+.commercialGridSwiper {
+    overflow: visible !important;
+    padding: 20px 4px 45px 4px !important;
+}
+
+.property-compact-card {
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+    border: 1px solid var(--light-border);
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.property-compact-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    border-color: var(--primary-color);
+    box-shadow: 0 24px 55px rgba(0, 162, 232, 0.18), 0 10px 20px rgba(19, 78, 127, 0.1);
+}
+
+.card-thumb-wrap {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background-color: #030811;
+}
+
+.card-thumb-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.property-compact-card:hover .card-thumb-wrap img {
+    transform: scale(1.09);
+}
+
+.card-img-overlay-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 162, 232, 0.2) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.property-compact-card:hover .card-img-overlay-glow {
+    opacity: 1;
+}
+
+.location-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(3, 8, 17, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    z-index: 2;
+}
+
+.location-badge i {
+    color: var(--primary-color);
+}
+
+.card-details {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: #ffffff;
+}
+
+.card-name {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+}
+
+.card-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.learn-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: gap 0.3s ease, color 0.3s ease;
+}
+
+.learn-btn:hover {
+    color: var(--secondary-color);
+    gap: 12px;
+}
+
+.scroll-reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}

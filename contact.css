@@ -1,0 +1,254 @@
+
+
+
+/* CONTACT BANNER */
+.contact-page-banner {
+    position: relative;
+    background: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/cullinan_-_xWpN2bljojHt.webp') center/cover no-repeat;
+    padding: 160px 0 90px;
+    color: #ffffff;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(3, 8, 17, 0.9) 0%, rgba(19, 78, 127, 0.8) 100%);
+}
+
+.banner-breadcrumb {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.banner-breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* CONTACT FORM CARD */
+.contact-main-section {
+    background-color: var(--light-bg);
+    padding: 90px 0;
+}
+
+.contact-form-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 16px 45px rgba(15, 23, 42, 0.08);
+    border: 1px solid var(--light-border);
+}
+
+.custom-input {
+    background-color: #f8fafc;
+    border: 1px solid var(--light-border);
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+}
+
+.custom-input:focus {
+    background-color: #ffffff;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px var(--primary-glow);
+}
+
+.btn-send-message {
+    background: var(--button-gradient-primary);
+    color: #ffffff;
+    font-weight: 500;
+    padding: 13px 32px;
+    border-radius: 50px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition-smooth);
+    box-shadow: 0 6px 20px var(--primary-glow);
+}
+
+.btn-send-message:hover {
+    background: var(--button-gradient-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--primary-glow);
+}
+
+/* CONTACT INFO BOXES */
+.contact-info-wrapper {
+    padding-left: 15px;
+}
+
+.info-grid-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info-box-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: #ffffff;
+    padding: 18px 22px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+    border: 1px solid var(--light-border);
+    transition: var(--transition-smooth);
+}
+
+.info-box-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+    box-shadow: 0 12px 30px rgba(0, 162, 232, 0.12);
+}
+
+.ib-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(0, 162, 232, 0.1);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+}
+
+.ib-title {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 2px;
+}
+
+.ib-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.ib-value:hover {
+    color: var(--primary-color);
+}
+
+.ib-sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.ib-link {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.ib-link:hover {
+    text-decoration: underline;
+}
+
+.partner-callout-box {
+    background: var(--secondary-color);
+    padding: 20px 24px;
+    border-radius: 16px;
+    border-left: 4px solid var(--accent-gold);
+    box-shadow: 0 8px 25px rgba(19, 78, 127, 0.2);
+}
+
+.partner-arrow-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--button-gradient-primary);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.partner-arrow-btn:hover {
+    transform: scale(1.1);
+    background: var(--button-gradient-hover);
+}
+
+/* LOCATION FEATURES */
+.location-map-section {
+    background-color: var(--light-bg);
+}
+
+.location-features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lf-item {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+}
+
+/* FAQ ACCORDION */
+.faq-contact-section {
+    background-color: #ffffff;
+    padding: 90px 0;
+}
+
+.custom-accordion .accordion-item {
+    border: 1px solid var(--light-border);
+    border-radius: 14px !important;
+    margin-bottom: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.03);
+}
+
+.custom-accordion .accordion-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: #f8fafc;
+    padding: 18px 22px;
+    box-shadow: none !important;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: rgba(0, 162, 232, 0.05);
+}
+
+.custom-accordion .accordion-body {
+    font-size: 0.92rem;
+    color: #475569;
+    padding: 20px 22px;
+    line-height: 1.6;
+}
+
+/* EXPLORE BANNER */
+.explore-banner-section {
+    position: relative;
+    background: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/mansion_-_JCTLohqIUT3m.webp') center/cover no-repeat;
+    padding: 80px 0;
+}
+
+.explore-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(3, 8, 17, 0.88) 0%, rgba(19, 78, 127, 0.82) 100%);
+}
+
+.scroll-reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}

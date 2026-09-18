@@ -1,0 +1,238 @@
+/* CAREER BANNER */
+.career-page-banner {
+    position: relative;
+    background: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/mansion_-_JCTLohqIUT3m.webp') center/cover no-repeat;
+    padding: 160px 0 90px;
+    color: #ffffff;
+}
+
+.banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(3, 8, 17, 0.9) 0%, rgba(19, 78, 127, 0.8) 100%);
+}
+
+.banner-breadcrumb {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.banner-breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* WHAT WE DO SECTION STYLING */
+.career-what-we-do {
+    background-color: #ffffff;
+    padding: 90px 0;
+}
+
+.wwd-features-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.wwd-feature-badge {
+    background: rgba(0, 162, 232, 0.08);
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 162, 232, 0.2);
+}
+
+.wwd-image-frame {
+    position: relative;
+}
+
+.wwd-floating-box {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: #ffffff;
+    padding: 18px 24px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid var(--accent-gold);
+    max-width: 250px;
+}
+
+/* OPEN POSITIONS & HIRING SECTION */
+.hiring-content-section {
+    background-color: var(--light-bg);
+    padding: 90px 0;
+}
+
+.openings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.position-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #ffffff;
+    padding: 20px 24px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+    border: 1px solid var(--light-border);
+    transition: var(--transition-smooth);
+}
+
+.position-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-color);
+    box-shadow: 0 12px 30px rgba(0, 162, 232, 0.15);
+}
+
+.pos-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(0, 162, 232, 0.1) 0%, rgba(19, 78, 127, 0.15) 100%);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.pos-info h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 2px;
+}
+
+.pos-info span {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+/* APPLY BOX STYLING */
+.career-apply-box {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 16px 45px rgba(15, 23, 42, 0.08);
+    border: 1px solid var(--light-border);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.career-apply-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--button-gradient-primary);
+}
+
+.apply-sub-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.apply-box-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 12px;
+}
+
+.apply-detail-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.apply-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(0, 162, 232, 0.1);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+}
+
+.apply-label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.apply-value {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.94rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.apply-value:hover {
+    color: var(--primary-color);
+}
+
+.btn-call-now {
+    display: inline-flex;
+    align-items: center;
+    background: var(--button-gradient-primary);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    padding: 12px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+    box-shadow: 0 6px 20px var(--primary-glow);
+}
+
+.btn-call-now:hover {
+    background: var(--button-gradient-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--primary-glow);
+}
+
+@media (max-width: 991px) {
+    .wwd-floating-box {
+        position: static;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
+.scroll-reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}   
