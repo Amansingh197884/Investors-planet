@@ -1,6 +1,4 @@
-/* ==========================================================
-   COMMERCIAL PAGE BANNER
-   ========================================================== */
+
 .commercial-page-banner {
     position: relative;
     background: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/cullinan_-_xWpN2bljojHt.webp') center/cover no-repeat;
@@ -24,9 +22,7 @@
     text-decoration: none;
 }
 
-/* ==========================================================
-   COMMERCIAL SECTION & SWITCHER STYLING
-   ========================================================== */
+
 .commercial-multi-section {
     background-color: var(--light-bg);
     padding: 85px 0;
@@ -134,9 +130,7 @@
     opacity: 0.85;
 }
 
-/* ==========================================================
-   COMMERCIAL SWIPER CARDS & HOVER EFFECTS
-   ========================================================== */
+
 .commercialGridSwiper {
     overflow: visible !important;
     padding: 20px 4px 45px 4px !important;
@@ -265,4 +259,92 @@
     opacity: 1 !important;
     visibility: visible !important;
     transform: none !important;
+}
+
+@media (max-width: 768px) {
+    .commercial-multi-section {
+        overflow: hidden !important;
+        padding: 50px 0 !important;
+    }
+
+    .commercial-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 14px !important;
+        margin: 0 !important;
+    }
+
+    .commercial-top-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 16px !important;
+        padding-bottom: 16px !important;
+    }
+
+    .header-content-left {
+        width: 100% !important;
+    }
+
+    .section-desc-text {
+        font-size: 0.85rem !important;
+    }
+
+    .property-type-switcher {
+        width: 100% !important;
+    }
+
+    .switcher-buttons {
+        display: flex !important;
+        width: 100% !important;
+        background: #e9eff5 !important;
+        padding: 4px !important;
+        border-radius: 50px !important;
+    }
+
+    .prop-type-btn {
+        flex: 1 !important;
+        justify-content: center !important;
+        padding: 8px 6px !important;
+        font-size: 0.72rem !important;
+        text-align: center !important;
+        white-space: nowrap !important;
+    }
+
+    .commercialGridSwiper {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+        padding: 10px 0 30px 0 !important;
+        margin: 0 !important;
+    }
+
+    .commercialGridSwiper .swiper-wrapper {
+        width: 100% !important;
+    }
+
+    .commercialGridSwiper .swiper-slide {
+        width: 82% !important;
+        max-width: 300px !important;
+    }
+
+    .property-compact-card {
+        height: auto !important;
+    }
+
+    .card-thumb-wrap {
+        height: 190px !important;
+    }
+
+    .card-details {
+        padding: 18px !important;
+    }
+
+    .card-name {
+        font-size: 1.2rem !important;
+    }
+
+    .card-desc {
+        font-size: 0.8rem !important;
+        margin-bottom: 12px !important;
+    }
 }

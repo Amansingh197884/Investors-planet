@@ -290,8 +290,8 @@ body {
 }
 
 .nav-enquire-btn {
-    background: #ffc907;
-    color: #f1f5f9;
+    background: var(--button-gradient-primary);
+    color: #ffffff;
     font-weight: 500;
     font-size: 0.86rem;
     padding: 11px 24px;
@@ -310,7 +310,7 @@ body {
 }
 
 .nav-enquire-btn:hover {
-    background: #ffc907ea;
+    background: var(--button-gradient-hover);
     color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 8px 24px var(--primary-glow);

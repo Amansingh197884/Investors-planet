@@ -21,33 +21,40 @@
 
 <body>
 
-    <nav class="top-navbar-wrapper scrolled" id="topNavbar">
+    <!-- navbar section -->
+    <nav class="top-navbar-wrapper" id="topNavbar">
         <a href="index.html" class="navbar-logo-tab">
             <img src="https://investorsplanet.co.in/assets/images/Logo/logo-in.jpeg" alt="Investors Planet Realty Logo">
         </a>
 
         <div class="center-nav-links">
-            <a href="index.html" class="nav-tab-item">Home</a>
+            <a href="index.html" class="nav-tab-item active">Home</a>
+
             <div class="nav-dropdown-wrapper">
-                <a href="#property" class="nav-tab-item">
+                <a href="#" class="nav-tab-item">
                     Property <i class="bi bi-chevron-down" style="font-size: 0.65rem;"></i>
                 </a>
                 <div class="nav-dropdown-menu">
-                    <a href="property.html" class="nav-dropdown-item">Commercial</a>
-                    <a href="residental.html" class="nav-dropdown-item">Residential</a>
+                    <a href="Commercial.html" class="nav-dropdown-item">Commercial</a>
+                    <a href="Residential.html" class="nav-dropdown-item">Residential</a>
                 </div>
             </div>
-            <a href="about.html" class="nav-tab-item">About Us</a>
-            <a href="career.html" class="nav-tab-item active">Career</a>
-            <a href="index.html#marketedProjects" class="nav-tab-item">Projects</a>
-            <a href="index.html#realEstateBlogs" class="nav-tab-item">Blogs</a>
-            <a href="index.html#siteFooter" class="nav-tab-item">Contact Us</a>
+
+            <a href="About.html" class="nav-tab-item">About Us</a>
+            <a href="Career.html" class="nav-tab-item">Career</a>
+            <a href="Testimonials.html" class="nav-tab-item">Testimonials</a>
+            <a href="Contact.html" class="nav-tab-item">Contact Us
+            </a>
         </div>
 
         <div class="navbar-right-actions">
-            <a href="#siteFooter" class="nav-enquire-btn">
+            <button class="nav-search-btn" title="Search" aria-label="Search">
+                <i class="bi bi-search"></i>
+            </button>
+            <a href="Contact.html" class="nav-enquire-btn">
                 Enquire Now <i class="bi bi-arrow-right"></i>
             </a>
+
             <button class="mobile-hamburger-btn" id="menuToggle" aria-label="Toggle Navigation">
                 <span></span>
                 <span></span>
@@ -56,7 +63,26 @@
         </div>
     </nav>
 
-    <!-- ================= CAREER BANNER ================= -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="mobile-nav-drawer" id="mobileDrawer">
+        <button class="drawer-close-btn" id="drawerClose" aria-label="Close Navigation">&times;</button>
+        <ul class="drawer-links">
+            <li><a href="#heroSection" class="mobile-menu-link">Home</a></li>
+            <li><a href="#heroSection" class="mobile-menu-link">Property - Commercial</a></li>
+            <li><a href="#heroSection" class="mobile-menu-link">Property - Residential</a></li>
+            <li><a href="#about" class="mobile-menu-link">About Us</a></li>
+            <li><a href="#exploreCategories" class="mobile-menu-link">Career</a></li>
+            <li><a href="#mostSellingProjects" class="mobile-menu-link">Testimonials</a></li>
+            <li><a href="#siteFooter" class="mobile-menu-link">Contact Us</a></li>
+        </ul>
+        <div class="drawer-contact-box">
+            <a href="#siteFooter" class="nav-enquire-btn w-100 justify-content-center">
+                Enquire Now <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </aside>
+    <!-- navbar end   -->
+
     <header class="career-page-banner">
         <div class="banner-overlay"></div>
         <div class="container text-center position-relative z-2">
@@ -68,7 +94,6 @@
         </div>
     </header>
 
-    <!-- ================= WHAT WE DO SECTION (Reference Image 1 & 2) ================= -->
     <section class="career-what-we-do py-5">
         <div class="container py-lg-4">
             <div class="row align-items-center g-5">
@@ -103,7 +128,6 @@
         </div>
     </section>
 
-    <!-- ================= OPENINGS & HR CONTACT SECTION (Reference Image 3) ================= -->
     <section class="hiring-content-section py-5 bg-light-custom">
         <div class="container py-lg-4">
             <div class="text-center mb-5 scroll-reveal" data-animation="animate__fadeInUp">
@@ -113,7 +137,6 @@
             </div>
 
             <div class="row g-4 align-items-stretch">
-                <!-- Left: Open Positions Cards -->
                 <div class="col-lg-6 scroll-reveal" data-animation="animate__fadeInLeft">
                     <div class="openings-container">
                         
@@ -160,7 +183,6 @@
                     </div>
                 </div>
 
-                <!-- Right: How to Apply & HR Info Box -->
                 <div class="col-lg-6 scroll-reveal" data-animation="animate__fadeInRight">
                     <div class="career-apply-box">
                         <span class="apply-sub-tag">HOW TO APPLY</span>
@@ -210,7 +232,6 @@
         </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
     <footer class="luxury-footer-section" id="siteFooter">
         <div class="footer-main-wrap">
             <div class="container-fluid px-lg-5 px-3">

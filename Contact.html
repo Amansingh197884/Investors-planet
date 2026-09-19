@@ -24,33 +24,40 @@
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <nav class="top-navbar-wrapper scrolled" id="topNavbar">
+    <!-- navbar section -->
+    <nav class="top-navbar-wrapper" id="topNavbar">
         <a href="index.html" class="navbar-logo-tab">
             <img src="https://investorsplanet.co.in/assets/images/Logo/logo-in.jpeg" alt="Investors Planet Realty Logo">
         </a>
 
         <div class="center-nav-links">
-            <a href="index.html" class="nav-tab-item">Home</a>
+            <a href="index.html" class="nav-tab-item active">Home</a>
+
             <div class="nav-dropdown-wrapper">
-                <a href="#property" class="nav-tab-item">
+                <a href="#" class="nav-tab-item">
                     Property <i class="bi bi-chevron-down" style="font-size: 0.65rem;"></i>
                 </a>
                 <div class="nav-dropdown-menu">
-                    <a href="property.html" class="nav-dropdown-item">Commercial</a>
-                    <a href="residental.html" class="nav-dropdown-item">Residential</a>
+                    <a href="Commercial.html" class="nav-dropdown-item">Commercial</a>
+                    <a href="Residential.html" class="nav-dropdown-item">Residential</a>
                 </div>
             </div>
-            <a href="about.html" class="nav-tab-item">About Us</a>
-            <a href="career.html" class="nav-tab-item">Career</a>
-            <a href="testimonials.html" class="nav-tab-item">Testimonials</a>
-            <a href="contact.html" class="nav-tab-item active">Contact Us</a>
+
+            <a href="About.html" class="nav-tab-item">About Us</a>
+            <a href="Career.html" class="nav-tab-item">Career</a>
+            <a href="Testimonials.html" class="nav-tab-item">Testimonials</a>
+            <a href="Contact.html" class="nav-tab-item">Contact Us
+            </a>
         </div>
 
         <div class="navbar-right-actions">
-            <a href="contact.html" class="nav-enquire-btn">
+            <button class="nav-search-btn" title="Search" aria-label="Search">
+                <i class="bi bi-search"></i>
+            </button>
+            <a href="Contact.html" class="nav-enquire-btn">
                 Enquire Now <i class="bi bi-arrow-right"></i>
             </a>
+
             <button class="mobile-hamburger-btn" id="menuToggle" aria-label="Toggle Navigation">
                 <span></span>
                 <span></span>
@@ -59,7 +66,26 @@
         </div>
     </nav>
 
-    <!-- ================= BANNER ================= -->
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="mobile-nav-drawer" id="mobileDrawer">
+        <button class="drawer-close-btn" id="drawerClose" aria-label="Close Navigation">&times;</button>
+        <ul class="drawer-links">
+            <li><a href="#heroSection" class="mobile-menu-link">Home</a></li>
+            <li><a href="#heroSection" class="mobile-menu-link">Property - Commercial</a></li>
+            <li><a href="#heroSection" class="mobile-menu-link">Property - Residential</a></li>
+            <li><a href="#about" class="mobile-menu-link">About Us</a></li>
+            <li><a href="#exploreCategories" class="mobile-menu-link">Career</a></li>
+            <li><a href="#mostSellingProjects" class="mobile-menu-link">Testimonials</a></li>
+            <li><a href="#siteFooter" class="mobile-menu-link">Contact Us</a></li>
+        </ul>
+        <div class="drawer-contact-box">
+            <a href="#siteFooter" class="nav-enquire-btn w-100 justify-content-center">
+                Enquire Now <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </aside>
+    <!-- navbar end   -->
+
     <header class="contact-page-banner">
         <div class="banner-overlay"></div>
         <div class="container text-center position-relative z-2">
@@ -71,12 +97,10 @@
         </div>
     </header>
 
-    <!-- ================= SEND MESSAGE & CONTACT INFO SECTION (Ref Image 1) ================= -->
     <section class="contact-main-section py-5">
         <div class="container py-lg-4">
             <div class="row g-5">
                 
-                <!-- Left Column: Send Us a Message Form -->
                 <div class="col-lg-7 scroll-reveal" data-animation="animate__fadeInLeft">
                     <div class="contact-form-card">
                         <span class="section-top-tag">GET IN TOUCH</span>
@@ -129,7 +153,6 @@
                     </div>
                 </div>
 
-                <!-- Right Column: Contact Information Cards -->
                 <div class="col-lg-5 scroll-reveal" data-animation="animate__fadeInRight">
                     <div class="contact-info-wrapper">
                         <span class="section-top-tag">CONTACT INFORMATION</span>
@@ -174,7 +197,6 @@
                             </div>
                         </div>
 
-                        <!-- Partner Box -->
                         <div class="partner-callout-box mt-4">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div>
@@ -192,7 +214,6 @@
         </div>
     </section>
 
-    <!-- ================= FIND US HERE / MAP SECTION (Ref Image 2) ================= -->
     <section class="location-map-section py-5 bg-light-custom" id="locationMap">
         <div class="container py-lg-4">
             <div class="row align-items-center g-5">
@@ -217,7 +238,6 @@
         </div>
     </section>
 
-    <!-- ================= FAQ SECTION (Ref Image 3) ================= -->
     <section class="faq-contact-section py-5">
         <div class="container py-lg-4">
             <div class="row g-5 align-items-center">
@@ -292,7 +312,6 @@
         </div>
     </section>
 
-    <!-- ================= EXPLORE BANNER (Ref Image 4) ================= -->
     <section class="explore-banner-section">
         <div class="explore-bg-overlay"></div>
         <div class="container text-center position-relative z-2 py-5">
@@ -305,7 +324,6 @@
         </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
     <footer class="luxury-footer-section" id="siteFooter">
         <div class="footer-main-wrap">
             <div class="container-fluid px-lg-5 px-3">
@@ -335,8 +353,8 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="index.html#mostSellingProjects">Projects</a></li>
-                                <li><a href="index.html#realEstateBlogs">Blogs</a></li>
+                                <li><a href="">Projects</a></li>
+                                <li><a href="">Blogs</a></li>
                             </ul>
                         </div>
                     </div>
