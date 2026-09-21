@@ -1,4 +1,3 @@
-/* CAREER BANNER */
 .career-page-banner {
     position: relative;
     background: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/mansion_-_JCTLohqIUT3m.webp') center/cover no-repeat;
@@ -22,7 +21,6 @@
     text-decoration: none;
 }
 
-/* WHAT WE DO SECTION STYLING */
 .career-what-we-do {
     background-color: #ffffff;
     padding: 90px 0;
@@ -45,23 +43,49 @@
     border: 1px solid rgba(0, 162, 232, 0.2);
 }
 
-.wwd-image-frame {
+.career-image-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
     position: relative;
 }
 
-.wwd-floating-box {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    background: #ffffff;
-    padding: 18px 24px;
-    border-radius: 14px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-    border-left: 4px solid var(--accent-gold);
-    max-width: 250px;
+.collage-item {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    height: 220px;
 }
 
-/* OPEN POSITIONS & HIRING SECTION */
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.collage-item:hover img {
+    transform: scale(1.08);
+}
+
+.collage-item.item-1 {
+    height: 170px;
+}
+
+.collage-item.item-2 {
+    height: 250px;
+    transform: translateY(30px);
+}
+
+.collage-item.item-3 {
+    height: 250px;
+    transform: translateY(-20px);
+}
+
+.collage-item.item-4 {
+    height: 170px;
+}
+
 .hiring-content-section {
     background-color: var(--light-bg);
     padding: 90px 0;
@@ -71,6 +95,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    height: 100%;
 }
 
 .position-card {
@@ -78,17 +103,19 @@
     align-items: center;
     gap: 18px;
     background: #ffffff;
-    padding: 20px 24px;
+    padding: 18px 24px;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
     border: 1px solid var(--light-border);
-    transition: var(--transition-smooth);
+    transition: all 0.4s ease;
+    flex: 1;
 }
 
 .position-card:hover {
     transform: translateY(-4px);
+    background: var(--secondary-color);
     border-color: var(--primary-color);
-    box-shadow: 0 12px 30px rgba(0, 162, 232, 0.15);
+    box-shadow: 0 14px 35px rgba(19, 78, 127, 0.25);
 }
 
 .pos-icon {
@@ -102,6 +129,13 @@
     justify-content: center;
     font-size: 1.25rem;
     flex-shrink: 0;
+    transition: all 0.6s ease;
+}
+
+.position-card:hover .pos-icon {
+    transform: rotate(360deg);
+    background: var(--accent-gold);
+    color: var(--secondary-color);
 }
 
 .pos-info h5 {
@@ -110,14 +144,23 @@
     font-weight: 600;
     color: var(--secondary-color);
     margin-bottom: 2px;
+    transition: color 0.4s ease;
+}
+
+.position-card:hover .pos-info h5 {
+    color: #ffffff;
 }
 
 .pos-info span {
     font-size: 0.82rem;
     color: var(--text-muted);
+    transition: color 0.4s ease;
 }
 
-/* APPLY BOX STYLING */
+.position-card:hover .pos-info span {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .career-apply-box {
     background: #ffffff;
     border-radius: 24px;
@@ -127,6 +170,9 @@
     position: relative;
     overflow: hidden;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .career-apply-box::before {
@@ -225,14 +271,18 @@
 }
 
 @media (max-width: 991px) {
-    .wwd-floating-box {
-        position: static;
-        margin-top: 20px;
-        max-width: 100%;
+    .career-image-collage {
+        grid-template-columns: 1fr;
+    }
+    .collage-item.item-2,
+    .collage-item.item-3 {
+        transform: translateY(0);
+        height: 200px;
     }
 }
+
 .scroll-reveal {
     opacity: 1 !important;
     visibility: visible !important;
     transform: none !important;
-}   
+}

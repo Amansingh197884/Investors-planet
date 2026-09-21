@@ -1,6 +1,3 @@
-/* ==========================================================
-   TESTIMONIALS PAGE BANNER
-   ========================================================== */
 .testimonials-page-banner {
     position: relative;
     background: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/cullinan_-_xWpN2bljojHt.webp') center/cover no-repeat;
@@ -24,64 +21,93 @@
     text-decoration: none;
 }
 
-/* ==========================================================
-   TESTIMONIALS CARDS & SECTION STYLING
-   ========================================================== */
 .testimonials-section {
     background-color: var(--light-bg);
-    padding: 90px 0;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-left-box {
+    text-align: left !important;
+}
+
+.quote-icon-lg {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    line-height: 1;
 }
 
 .testimonialSwiper {
-    overflow: visible !important;
-    padding: 20px 4px 45px 4px !important;
+    overflow: hidden !important;
+    padding: 20px 10px 40px 10px !important;
+    margin: -20px -10px;
 }
 
 .testimonial-card {
     background: #ffffff;
     border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.06);
+    padding: 32px;
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.05);
     border: 1px solid var(--light-border);
     height: 100%;
     display: flex;
     flex-direction: column;
-    transition: var(--transition-smooth);
+    justify-content: space-between;
+    transition: transform 0.4s ease, background 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
 .testimonial-card:hover {
     transform: translateY(-6px);
+    background: var(--secondary-color);
     border-color: var(--primary-color);
-    box-shadow: 0 16px 45px rgba(0, 162, 232, 0.12);
+    box-shadow: 0 16px 45px rgba(19, 78, 127, 0.25);
+}
+
+.client-feedback {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #334155;
+    margin: 0;
+    transition: color 0.4s ease;
+}
+
+.testimonial-card:hover .client-feedback {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.rating-stars {
+    color: var(--accent-gold);
+    font-size: 0.85rem;
+    display: flex;
+    gap: 3px;
 }
 
 .client-profile-row {
     display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 2px;
+    border-top: 1px solid var(--light-border);
+    padding-top: 16px;
+    transition: border-color 0.4s ease;
 }
 
-.client-avatar {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(19, 78, 127, 0.25);
+.testimonial-card:hover .client-profile-row {
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .client-name {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--secondary-color);
-    margin-bottom: 2px;
+    margin: 0;
+    transition: color 0.4s ease;
+}
+
+.testimonial-card:hover .client-name {
+    color: #ffffff;
 }
 
 .client-location {
@@ -89,33 +115,25 @@
     font-size: 0.78rem;
     color: var(--text-muted);
     font-weight: 500;
+    transition: color 0.4s ease;
 }
 
-.rating-stars {
+.testimonial-card:hover .client-location {
     color: var(--accent-gold);
-    font-size: 0.85rem;
-    display: flex;
-    gap: 2px;
 }
 
-.client-feedback {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.92rem;
-    line-height: 1.7;
-    color: #334155;
-    font-style: italic;
-    margin: 0;
+.testimonial-custom-controls {
+    margin-top: 30px;
 }
 
-/* Swiper Navigation Custom Buttons */
 .swiper-nav-buttons {
     display: flex;
     gap: 12px;
 }
 
 .swiper-nav-btn {
-    width: 46px;
-    height: 46px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     border: 1px solid rgba(19, 78, 127, 0.2);
     background: #ffffff;
@@ -125,7 +143,7 @@
     justify-content: center;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: var(--transition-smooth);
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
 }
 
@@ -136,6 +154,7 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 20px var(--primary-glow);
 }
+
 .scroll-reveal {
     opacity: 1 !important;
     visibility: visible !important;
