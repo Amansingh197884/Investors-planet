@@ -6,43 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Commercial Landmarks - Investors Planet Realty</title>
 
-    <!-- Bootstrap 5 & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="property.css">
 </head> 
 
 <body>
 
- 
-    <!-- navbar section -->
     <nav class="top-navbar-wrapper" id="topNavbar">
         <a href="index.html" class="navbar-logo-tab">
             <img src="https://investorsplanet.co.in/assets/images/Logo/logo-in.jpeg" alt="Investors Planet Realty Logo">
         </a>
 
         <div class="center-nav-links">
-            <a href="index.html" class="nav-tab-item active">Home</a>
+            <a href="index.html" class="nav-tab-item">Home</a>
 
             <div class="nav-dropdown-wrapper">
-                <a href="#" class="nav-tab-item">
+                <a href="#" class="nav-tab-item active">
                     Property <i class="bi bi-chevron-down" style="font-size: 0.65rem;"></i>
                 </a>
                 <div class="nav-dropdown-menu">
-                    <a href="Commercial.html" class="nav-dropdown-item">Commercial</a>
+                    <a href="Commercial.html" class="nav-dropdown-item active">Commercial</a>
                     <a href="Residential.html" class="nav-dropdown-item">Residential</a>
                 </div>
             </div>
@@ -50,8 +42,7 @@
             <a href="About.html" class="nav-tab-item">About Us</a>
             <a href="Career.html" class="nav-tab-item">Career</a>
             <a href="Testimonials.html" class="nav-tab-item">Testimonials</a>
-            <a href="Contact.html" class="nav-tab-item">Contact Us
-            </a>
+            <a href="Contact.html" class="nav-tab-item">Contact Us</a>
         </div>
 
         <div class="navbar-right-actions">
@@ -59,7 +50,7 @@
                 <i class="bi bi-search"></i>
             </button>
             <a href="Contact.html" class="nav-enquire-btn">
-                Enquire Now <i class="bi bi-arrow-right"></i>
+                <span>Enquire Now</span> <i class="bi bi-arrow-right"></i>
             </a>
 
             <button class="mobile-hamburger-btn" id="menuToggle" aria-label="Toggle Navigation">
@@ -74,21 +65,20 @@
     <aside class="mobile-nav-drawer" id="mobileDrawer">
         <button class="drawer-close-btn" id="drawerClose" aria-label="Close Navigation">&times;</button>
         <ul class="drawer-links">
-            <li><a href="#heroSection" class="mobile-menu-link">Home</a></li>
-            <li><a href="#heroSection" class="mobile-menu-link">Property - Commercial</a></li>
-            <li><a href="#heroSection" class="mobile-menu-link">Property - Residential</a></li>
-            <li><a href="#about" class="mobile-menu-link">About Us</a></li>
-            <li><a href="#exploreCategories" class="mobile-menu-link">Career</a></li>
-            <li><a href="#mostSellingProjects" class="mobile-menu-link">Testimonials</a></li>
-            <li><a href="#siteFooter" class="mobile-menu-link">Contact Us</a></li>
+            <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+            <li><a href="Commercial.html" class="mobile-menu-link">Property - Commercial</a></li>
+            <li><a href="Residential.html" class="mobile-menu-link">Property - Residential</a></li>
+            <li><a href="About.html" class="mobile-menu-link">About Us</a></li>
+            <li><a href="Career.html" class="mobile-menu-link">Career</a></li>
+            <li><a href="Testimonials.html" class="mobile-menu-link">Testimonials</a></li>
+            <li><a href="Contact.html" class="mobile-menu-link">Contact Us</a></li>
         </ul>
         <div class="drawer-contact-box">
-            <a href="#siteFooter" class="nav-enquire-btn w-100 justify-content-center">
-                Enquire Now <i class="bi bi-arrow-right"></i>
+            <a href="Contact.html" class="nav-enquire-btn w-100 justify-content-center">
+                <span>Enquire Now</span> <i class="bi bi-arrow-right"></i>
             </a>
         </div>
     </aside>
-    <!-- navbar end   -->
 
     <header class="commercial-page-banner">
         <div class="banner-overlay"></div>
@@ -100,7 +90,6 @@
             </p>
         </div>
     </header>
-
 
     <section class="commercial-multi-section py-5">
         <div class="commercial-container">
@@ -117,11 +106,11 @@
                 <div class="property-type-switcher">
                     <span class="switcher-label">Property Types</span>
                     <div class="switcher-buttons">
-                        <a href="property.html" class="prop-type-btn active">
+                        <a href="Commercial.html" class="prop-type-btn active">
                             <span>Commercial Property</span>
                             <span class="badge-count">(6)</span>
                         </a>
-                        <a href="residental.html" class="prop-type-btn">
+                        <a href="Residential.html" class="prop-type-btn">
                             <span>Residential Property</span>
                             <span class="badge-count">(8)</span>
                         </a>
@@ -129,150 +118,190 @@
                 </div>
             </div>
 
-            <!-- Commercial Swiper Slider -->
-            <div class="swiper commercialGridSwiper scroll-reveal" data-animation="animate__fadeInUp">
-                <div class="swiper-wrapper">
-                    
-                    <!-- Card 1 -->
-                    <div class="swiper-slide">
-                        <div class="property-compact-card">
-                            <div class="card-thumb-wrap">
-                                <img src="https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&w=700" alt="M3M Noida">
-                                <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Noida</span>
-                                <div class="card-img-overlay-glow"></div>
+            <!-- 4 * 4 Grid Layout with Location Badge & View Property Hover -->
+            <div class="commercial-grid-layout">
+                
+                <div class="commercial-grid-item scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="property-reference-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&w=700" alt="M3M Noida">
+                            <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+                            <div class="card-hover-overlay">
+                                <a href="m3m-noida.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
                             </div>
-                            <div class="card-details">
-                                <h4 class="card-name">M3M Noida</h4>
-                                <p class="card-desc">M3M The Line offers a luxurious retail experience with a unique design......</p>
-                                <a href="m3m-noida.html" class="learn-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                        <div class="card-content-panel">
+                            <div class="panel-top-row">
+                                <h4 class="card-property-title">M3M Noida</h4>
+                            </div>
+                            <p class="card-property-snippet">M3M The Line offers a luxurious retail experience with a unique design...</p>
+                            <div class="panel-footer-row">
+                                <span class="developer-tag">By Investors Planet</span>
+                                <span class="status-tag">Verified Project</span>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card 2 -->
-                    <div class="swiper-slide">
-                        <div class="property-compact-card">
-                            <div class="card-thumb-wrap">
-                                <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Fairfox EON Noida">
-                                <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Noida</span>
-                                <div class="card-img-overlay-glow"></div>
-                            </div>
-                            <div class="card-details">
-                                <h4 class="card-name">Fairfox EON Noida</h4>
-                                <p class="card-desc">The future is full of opportunities and it belongs to those who can see it today......</p>
-                                <a href="fairfox-eon.html" class="learn-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="swiper-slide">
-                        <div class="property-compact-card">
-                            <div class="card-thumb-wrap">
-                                <img src="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting-area.jpg?auto=compress&cs=tinysrgb&w=700" alt="ACE Group Noida">
-                                <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Noida</span>
-                                <div class="card-img-overlay-glow"></div>
-                            </div>
-                            <div class="card-details">
-                                <h4 class="card-name">ACE Group Noida</h4>
-                                <p class="card-desc">ACE is a commercial property which is the perfect commercial spot in Noida......</p>
-                                <a href="ace-group.html" class="learn-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="swiper-slide">
-                        <div class="property-compact-card">
-                            <div class="card-thumb-wrap">
-                                <img src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=700" alt="GYGY Noida">
-                                <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Noida</span>
-                                <div class="card-img-overlay-glow"></div>
-                            </div>
-                            <div class="card-details">
-                                <h4 class="card-name">GYGY Noida</h4>
-                                <p class="card-desc">Project Site : Plot Number - 02, Sector - 140, Noida Uttar Pradesh 201305......</p>
-                                <a href="gygy-noida.html" class="learn-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="swiper-slide">
-                        <div class="property-compact-card">
-                            <div class="card-thumb-wrap">
-                                <img src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bhutani Grandthum">
-                                <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Noida</span>
-                                <div class="card-img-overlay-glow"></div>
-                            </div>
-                            <div class="card-details">
-                                <h4 class="card-name">Bhutani Grandthum</h4>
-                                <p class="card-desc">Bhutani Grandthum is a commercial property spot in Greater Noida West......</p>
-                                <a href="bhutani-grandthum.html" class="learn-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div class="swiper-slide">
-                        <div class="property-compact-card">
-                            <div class="card-thumb-wrap">
-                                <img src="https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Anand Habitat Sahibabad">
-                                <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Sahibabad</span>
-                                <div class="card-img-overlay-glow"></div>
-                            </div>
-                            <div class="card-details">
-                                <h4 class="card-name">Anand Habitat Sahibabad</h4>
-                                <p class="card-desc">Anand Habitat Sahibabad is a commercial property spot in Sahibabad......</p>
-                                <a href="anand-habitat.html" class="learn-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 7 -->
-                    <div class="swiper-slide">
-                        <div class="property-compact-card">
-                            <div class="card-thumb-wrap">
-                                <img src="https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Cyberthum">
-                                <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Sector 140A</span>
-                                <div class="card-img-overlay-glow"></div>
-                            </div>
-                            <div class="card-details">
-                                <h4 class="card-name">Bhutani Cyberthum</h4>
-                                <p class="card-desc">North India's tallest commercial towers featuring high-street retail, helipad, and sky mall......</p>
-                                <a href="bhutani-cyberthum.html" class="learn-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 8 -->
-                    <div class="swiper-slide">
-                        <div class="property-compact-card">
-                            <div class="card-thumb-wrap">
-                                <img src="https://images.pexels.com/photos/2079234/pexels-photo-2079234.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Alphathum">
-                                <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Sector 90</span>
-                                <div class="card-img-overlay-glow"></div>
-                            </div>
-                            <div class="card-details">
-                                <h4 class="card-name">Bhutani Alphathum</h4>
-                                <p class="card-desc">World-class business hub featuring rooftop infinity pool, grade-A offices and sky lounge......</p>
-                                <a href="bhutani-alphathum.html" class="learn-btn"><span>Learn More</span> <i class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
-                <!-- Swiper Pagination -->
-                <div class="grid-slider-controls mt-4">
-                    <div class="swiper-pagination comm-grid-pagination"></div>
+                <div class="commercial-grid-item scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="property-reference-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Fairfox EON Noida">
+                            <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+                            <div class="card-hover-overlay">
+                                <a href="fairfox-eon.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-content-panel">
+                            <div class="panel-top-row">
+                                <h4 class="card-property-title">Fairfox EON Noida</h4>
+                            </div>
+                            <p class="card-property-snippet">The future is full of opportunities and it belongs to those who can see it today...</p>
+                            <div class="panel-footer-row">
+                                <span class="developer-tag">By Investors Planet</span>
+                                <span class="status-tag">Verified Project</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="commercial-grid-item scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="property-reference-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting-area.jpg?auto=compress&cs=tinysrgb&w=700" alt="ACE Group Noida">
+                            <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+                            <div class="card-hover-overlay">
+                                <a href="ace-group.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-content-panel">
+                            <div class="panel-top-row">
+                                <h4 class="card-property-title">ACE Group Noida</h4>
+                            </div>
+                            <p class="card-property-snippet">ACE is a commercial property which is the perfect commercial spot in Noida...</p>
+                            <div class="panel-footer-row">
+                                <span class="developer-tag">By Investors Planet</span>
+                                <span class="status-tag">Verified Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commercial-grid-item scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="property-reference-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&w=700" alt="GYGY Noida">
+                            <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+                            <div class="card-hover-overlay">
+                                <a href="gygy-noida.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-content-panel">
+                            <div class="panel-top-row">
+                                <h4 class="card-property-title">GYGY Noida</h4>
+                            </div>
+                            <p class="card-property-snippet">Project Site : Plot Number - 02, Sector - 140, Noida Uttar Pradesh 201305...</p>
+                            <div class="panel-footer-row">
+                                <span class="developer-tag">By Investors Planet</span>
+                                <span class="status-tag">Verified Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commercial-grid-item scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="property-reference-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bhutani Grandthum">
+                            <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+                            <div class="card-hover-overlay">
+                                <a href="bhutani-grandthum.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-content-panel">
+                            <div class="panel-top-row">
+                                <h4 class="card-property-title">Bhutani Grandthum</h4>
+                            </div>
+                            <p class="card-property-snippet">Bhutani Grandthum is a commercial property spot in Greater Noida West...</p>
+                            <div class="panel-footer-row">
+                                <span class="developer-tag">By Investors Planet</span>
+                                <span class="status-tag">Verified Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commercial-grid-item scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="property-reference-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Anand Habitat Sahibabad">
+                            <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Sahibabad</span>
+                            <div class="card-hover-overlay">
+                                <a href="anand-habitat.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-content-panel">
+                            <div class="panel-top-row">
+                                <h4 class="card-property-title">Anand Habitat</h4>
+                            </div>
+                            <p class="card-property-snippet">Anand Habitat Sahibabad is a commercial property spot in Sahibabad...</p>
+                            <div class="panel-footer-row">
+                                <span class="developer-tag">By Investors Planet</span>
+                                <span class="status-tag">Verified Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commercial-grid-item scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="property-reference-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Cyberthum">
+                            <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Sector 140A</span>
+                            <div class="card-hover-overlay">
+                                <a href="bhutani-cyberthum.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-content-panel">
+                            <div class="panel-top-row">
+                                <h4 class="card-property-title">Bhutani Cyberthum</h4>
+                            </div>
+                            <p class="card-property-snippet">North India's tallest commercial towers featuring high-street retail...</p>
+                            <div class="panel-footer-row">
+                                <span class="developer-tag">By Investors Planet</span>
+                                <span class="status-tag">Verified Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commercial-grid-item scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="property-reference-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/2079234/pexels-photo-2079234.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Alphathum">
+                            <span class="location-badge"><i class="bi bi-geo-alt-fill"></i> Sector 90</span>
+                            <div class="card-hover-overlay">
+                                <a href="bhutani-alphathum.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-content-panel">
+                            <div class="panel-top-row">
+                                <h4 class="card-property-title">Bhutani Alphathum</h4>
+                            </div>
+                            <p class="card-property-snippet">World-class business hub featuring rooftop infinity pool, grade-A offices...</p>
+                            <div class="panel-footer-row">
+                                <span class="developer-tag">By Investors Planet</span>
+                                <span class="status-tag">Verified Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
     </section>
 
-   
     <footer class="luxury-footer-section" id="siteFooter">
         <div class="footer-main-wrap">
             <div class="container-fluid px-lg-5 px-3">
@@ -300,10 +329,10 @@
                             <h4 class="footer-col-title">Useful Links</h4>
                             <ul class="footer-links-list">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="property.html">Commercial</a></li>
-                                <li><a href="residental.html">Residential</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="Commercial.html">Commercial</a></li>
+                                <li><a href="Residential.html">Residential</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -337,50 +366,15 @@
         </div>
     </footer>
 
-    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Swiper JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            
             const topNavbar = document.getElementById('topNavbar');
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 30) {
                     topNavbar.classList.add('scrolled');
                 } else {
-                    topNavbar.classList.add('scrolled');
-                }
-            });
-
-            const commercialSwiper = new Swiper('.commercialGridSwiper', {
-                slidesPerView: 1.15,
-                spaceBetween: 18,
-                speed: 850,
-                loop: true,
-                autoplay: {
-                    delay: 3500,
-                    disableOnInteraction: false,
-                    pauseOnMouseEnter: true,
-                },
-                pagination: {
-                    el: '.comm-grid-pagination',
-                    clickable: true,
-                },
-                breakpoints: {
-                    576: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    992: {
-                        slidesPerView: 3,
-                        spaceBetween: 24,
-                    },
-                    1200: {
-                        slidesPerView: 4,
-                        spaceBetween: 28,
-                    }
+                    topNavbar.classList.remove('scrolled');
                 }
             });
 
@@ -403,7 +397,9 @@
                 rootMargin: '0px 0px -40px 0px'
             });
 
-            scrollObserver.observe(document.querySelector('.commercial-multi-section'));
+            document.querySelectorAll('section, header').forEach(sec => {
+                scrollObserver.observe(sec);
+            });
         });
     </script>
 </body>

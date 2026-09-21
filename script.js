@@ -263,29 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    new Swiper('.aboutTeamSwiper', {
-        slidesPerView: 1.15,
-        spaceBetween: 18,
-        speed: 800,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            576: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 22,
-            },
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 24,
-            }
-        }
-    });
+
 
     new Swiper('.testimonialSwiper', {
         slidesPerView: 1,

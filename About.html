@@ -14,22 +14,23 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
 
-    <!-- navbar section -->
     <nav class="top-navbar-wrapper" id="topNavbar">
         <a href="index.html" class="navbar-logo-tab">
             <img src="https://investorsplanet.co.in/assets/images/Logo/logo-in.jpeg" alt="Investors Planet Realty Logo">
         </a>
 
         <div class="center-nav-links">
-            <a href="index.html" class="nav-tab-item active">Home</a>
+            <a href="index.html" class="nav-tab-item">Home</a>
 
             <div class="nav-dropdown-wrapper">
                 <a href="#" class="nav-tab-item">
@@ -41,11 +42,10 @@
                 </div>
             </div>
 
-            <a href="About.html" class="nav-tab-item">About Us</a>
+            <a href="About.html" class="nav-tab-item active">About Us</a>
             <a href="Career.html" class="nav-tab-item">Career</a>
             <a href="Testimonials.html" class="nav-tab-item">Testimonials</a>
-            <a href="Contact.html" class="nav-tab-item">Contact Us
-            </a>
+            <a href="Contact.html" class="nav-tab-item">Contact Us</a>
         </div>
 
         <div class="navbar-right-actions">
@@ -53,7 +53,7 @@
                 <i class="bi bi-search"></i>
             </button>
             <a href="Contact.html" class="nav-enquire-btn">
-                Enquire Now <i class="bi bi-arrow-right"></i>
+                <span>Enquire Now</span> <i class="bi bi-arrow-right"></i>
             </a>
 
             <button class="mobile-hamburger-btn" id="menuToggle" aria-label="Toggle Navigation">
@@ -68,21 +68,20 @@
     <aside class="mobile-nav-drawer" id="mobileDrawer">
         <button class="drawer-close-btn" id="drawerClose" aria-label="Close Navigation">&times;</button>
         <ul class="drawer-links">
-            <li><a href="#heroSection" class="mobile-menu-link">Home</a></li>
-            <li><a href="#heroSection" class="mobile-menu-link">Property - Commercial</a></li>
-            <li><a href="#heroSection" class="mobile-menu-link">Property - Residential</a></li>
-            <li><a href="#about" class="mobile-menu-link">About Us</a></li>
-            <li><a href="#exploreCategories" class="mobile-menu-link">Career</a></li>
-            <li><a href="#mostSellingProjects" class="mobile-menu-link">Testimonials</a></li>
-            <li><a href="#siteFooter" class="mobile-menu-link">Contact Us</a></li>
+            <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+            <li><a href="Commercial.html" class="mobile-menu-link">Property - Commercial</a></li>
+            <li><a href="Residential.html" class="mobile-menu-link">Property - Residential</a></li>
+            <li><a href="About.html" class="mobile-menu-link">About Us</a></li>
+            <li><a href="Career.html" class="mobile-menu-link">Career</a></li>
+            <li><a href="Testimonials.html" class="mobile-menu-link">Testimonials</a></li>
+            <li><a href="Contact.html" class="mobile-menu-link">Contact Us</a></li>
         </ul>
         <div class="drawer-contact-box">
-            <a href="#siteFooter" class="nav-enquire-btn w-100 justify-content-center">
-                Enquire Now <i class="bi bi-arrow-right"></i>
+            <a href="Contact.html" class="nav-enquire-btn w-100 justify-content-center">
+                <span>Enquire Now</span> <i class="bi bi-arrow-right"></i>
             </a>
         </div>
     </aside>
-    <!-- navbar end   -->
 
     <header class="about-page-banner">
         <div class="banner-overlay"></div>
@@ -95,7 +94,7 @@
         </div>
     </header>
 
-    <section class="about-detailed-section py-5">
+    <section class="about-detailed-section py-5 bg-light-custom" id="about-detailed-section">
         <div class="container py-lg-4">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 scroll-reveal" data-animation="animate__fadeInLeft">
@@ -103,32 +102,43 @@
                         <span class="section-top-tag">FULL-SERVICE EXPERTISE</span>
                         <h2 class="section-unified-heading mb-4">Shaping Real Estate Excellence</h2>
                         <p class="about-desc">
-                            Investors Planet Realty is a full-service company for all your real estate needs. Whether you're looking to buy or sell a home, invest in real estate, or need property management services, our experienced team is here to help you every step of the way. Our deep knowledge of the local market allows us to confidently guide you through the chaos of the real estate world.
+                            Investors Planet Realty is a full-service company for all your real estate needs. Whether
+                            you're looking to buy or sell a home, invest in real estate, or need property management
+                            services, our experienced team is here to help you every step of the way. Our deep knowledge
+                            of the local market allows us to confidently guide you through the chaos of the real estate
+                            world.
                         </p>
-                        <p class="about-desc">
-                            Our commitment to providing personalized service to each customer sets us apart. We take the time to understand your unique goals, preferences and tailor our services accordingly. In addition to traditional real estate services, we also specialize in helping investors make profitable investments. We recognize the importance of real estate investing as a means of generating income and building wealth, and we have the expertise and experience to help you make your investment decisions.
+                        <p class="about-desc mb-0">
+                            Our commitment to providing personalized service to each customer sets us apart. We take the
+                            time to understand your unique goals, preferences and tailor our services accordingly. In
+                            addition to traditional real estate services, we also specialize in helping investors make
+                            profitable investments.
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6 scroll-reveal" data-animation="animate__fadeInRight">
                     <div class="about-vision-img-wrap">
-                        <img src="https://i.pinimg.com/736x/68/a8/88/68a88817c9050d8937019f63d39efa8c.jpg" alt="Luxury Real Estate" class="img-fluid rounded-4 shadow-lg">
+                        <img src="https://i.pinimg.com/1200x/dd/ef/a6/ddefa6b7e621953a6d406f43202ed3f1.jpg"
+                            alt="Luxury Real Estate" class="about-img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="what-we-do-section py-5 bg-light-custom">
+    <section class="what-we-do-section py-5" id="what-we-do-section">
         <div class="container py-lg-4 text-center">
             <div class="row justify-content-center">
                 <div class="col-lg-8 scroll-reveal" data-animation="animate__fadeInUp">
                     <span class="section-top-tag">OUR STRATEGY</span>
                     <h2 class="section-unified-heading mb-4">What We Do</h2>
-                    <p class="about-desc mb-4">
-                        Investors Planet Realty recognizes that every investor is unique and has unique financial goals, investment opportunities and risk assessments. We offer various investment options according to the client's needs. Whether you are looking for long-term investment solutions, short-term growth plans or medium-term solutions, we can help you. Our financial advisors can work with you to create an investment plan that meets your specific goals. We take the time necessary to understand your financial situation, investment considerations and personal preferences in order to create investment strategies for you.
+                    <p class="what-we-do-desc mb-4">
+                        Investors Planet Realty recognizes that every investor is unique and has unique financial goals,
+                        investment opportunities and risk assessments. We offer various investment options according to
+                        the client's needs. Whether you are looking for long-term investment solutions, short-term
+                        growth plans or medium-term solutions, we can help you.
                     </p>
-                    <a href="#siteFooter" class="btn-know-more mt-3">
+                    <a href="Contact.html" class="btn-know-more mt-3">
                         <span>Get Appointment</span>
                         <i class="bi bi-arrow-right ms-2"></i>
                     </a>
@@ -137,77 +147,77 @@
         </div>
     </section>
 
-    <section class="our-team-section py-5">
+    <section class="our-team-section py-5 bg-light-custom" id="our-team-section">
         <div class="container py-lg-5">
             <div class="text-center mb-5 scroll-reveal" data-animation="animate__fadeInUp">
                 <span class="section-top-tag">LEADERSHIP EXCELLENCE</span>
-                <h2 class="section-unified-heading">Our Team</h2>
-                <p class="text-muted">The visionary minds behind Investors Planet Realty</p>
+                <h2 class="section-unified-heading">Meet our Team</h2>
+                <p class="text-muted mt-2">The visionary minds and driving force behind Investors Planet Realty.</p>
             </div>
 
             <div class="swiper aboutTeamSwiper scroll-reveal" data-animation="animate__fadeInUp">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <div class="team-luxury-card">
-                            <div class="team-img-wrapper">
-                                <img src="https://i.pinimg.com/736x/68/a8/88/68a88817c9050d8937019f63d39efa8c.jpg" alt="Mr. Anubhav Tyagi">
-                                <div class="team-social-overlay">
-                                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    <a href="#"><i class="bi bi-envelope-fill"></i></a>
-                                </div>
+                        <div class="team-profile-card">
+                            <div class="team-avatar-box">
+                                <img src="images/our-team1.webp"
+                                    alt="Mr. Anubhav Tyagi">
                             </div>
-                            <div class="team-info text-center pt-4">
+                            <div class="team-info-box text-center">
                                 <h4 class="team-name">Mr. Anubhav Tyagi</h4>
+                                <span class="team-sub-info">New Delhi, NCR</span>
                                 <span class="team-role">Founder & Director</span>
+                                <p class="team-bio">Guiding strategic vision and steering high-end real estate
+                                    excellence across the region.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="team-luxury-card">
-                            <div class="team-img-wrapper">
-                                <img src="https://i.pinimg.com/1200x/0e/28/10/0e281031130ed455cd875e7eabe86943.jpg" alt="Mr. Yash Anand">
-                                <div class="team-social-overlay">
-                                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    <a href="#"><i class="bi bi-envelope-fill"></i></a>
-                                </div>
+                        <div class="team-profile-card">
+                            <div class="team-avatar-box">
+                                <img src="images/team-2.webp"
+                                    alt="Mr. Yash Anand">
                             </div>
-                            <div class="team-info text-center pt-4">
+                            <div class="team-info-box text-center">
                                 <h4 class="team-name">Mr. Yash Anand</h4>
+                                <span class="team-sub-info">Noida, Sector 72</span>
                                 <span class="team-role">Co-Founder & Director Sales</span>
+                                <p class="team-bio">Spearheading residential and commercial sales performance with
+                                    client-centric approach.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="team-luxury-card">
-                            <div class="team-img-wrapper">
-                                <img src="https://i.pinimg.com/736x/b8/08/d7/b808d746e11e2a88268e295a4e2df7ee.jpg" alt="Mr. Shubham Sharma">
-                                <div class="team-social-overlay">
-                                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    <a href="#"><i class="bi bi-envelope-fill"></i></a>
-                                </div>
+                        <div class="team-profile-card">
+                            <div class="team-avatar-box">
+                                <img src="images/our-team3.webp"
+                                    alt="Mr. Shubham Sharma">
                             </div>
-                            <div class="team-info text-center pt-4">
+                            <div class="team-info-box text-center">
                                 <h4 class="team-name">Mr. Shubham Sharma</h4>
+                                <span class="team-sub-info">Greater Noida, UP</span>
                                 <span class="team-role">Co-Founder & Director Sales</span>
+                                <p class="team-bio">Driving robust market growth, channel partner relations and property
+                                    acquisitions.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="team-luxury-card">
-                            <div class="team-img-wrapper">
-                                <img src="https://i.pinimg.com/736x/2e/1c/e1/2e1ce1e18475a00035cc2ab0f9a0c046.jpg" alt="Mr. Shivam Agrawal">
-                                <div class="team-social-overlay">
-                                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    <a href="#"><i class="bi bi-envelope-fill"></i></a>
-                                </div>
+                        <div class="team-profile-card">
+                            <div class="team-avatar-box">
+                                <img src="images/our-team4.webp"
+                                    alt="Mr. Shivam Agrawal">
                             </div>
-                            <div class="team-info text-center pt-4">
+                            <div class="team-info-box text-center">
                                 <h4 class="team-name">Mr. Shivam Agrawal</h4>
+                                <span class="team-sub-info">Ghaziabad, NCR</span>
                                 <span class="team-role">Co-Founder & Director Sales</span>
+                                <p class="team-bio">Structuring investment portfolios and delivering tailored financial
+                                    growth for investors.</p>
                             </div>
                         </div>
                     </div>
@@ -229,7 +239,9 @@
                                 <span class="brand-sub">REALTY PVT LTD</span>
                             </a>
                             <p class="footer-about-text">
-                                Investors Planet Realty is a full-service company for all your real estate needs. Whether you're looking to buy or sell a home, invest in real estate, or need property management services.
+                                Investors Planet Realty is a full-service company for all your real estate needs.
+                                Whether you're looking to buy or sell a home, invest in real estate, or need property
+                                management services.
                             </p>
                             <div class="footer-social-cluster mb-3">
                                 <a href="#" class="social-icon-btn"><i class="bi bi-facebook"></i></a>
@@ -245,10 +257,10 @@
                             <h4 class="footer-col-title">Useful Links</h4>
                             <ul class="footer-links-list">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="index.html#exploreCategories">Categories</a></li>
-                                <li><a href="index.html#mostSellingProjects">Projects</a></li>
-                                <li><a href="index.html#realEstateBlogs">Blogs</a></li>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="Commercial.html">Commercial</a></li>
+                                <li><a href="Residential.html">Residential</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -268,7 +280,8 @@
                                     <i class="bi bi-envelope-fill f-contact-icon"></i>
                                     <div class="f-contact-detail">
                                         <span class="f-contact-label">Email</span>
-                                        <a href="mailto:info@investorsplanet.co.in" class="f-link">info@investorsplanet.co.in</a>
+                                        <a href="mailto:info@investorsplanet.co.in"
+                                            class="f-link">info@investorsplanet.co.in</a>
                                     </div>
                                 </div>
                             </div>
@@ -284,6 +297,58 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new Swiper('.aboutTeamSwiper', {
+                slidesPerView: 1.15,
+                spaceBetween: 16,
+                speed: 800,
+                centeredSlides: false,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 18,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 24,
+                    }
+                }
+            });
+
+            const scrollObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const revealItems = entry.target.querySelectorAll('.scroll-reveal');
+                        revealItems.forEach((item, index) => {
+                            setTimeout(() => {
+                                const animationType = item.dataset.animation || 'animate__fadeInUp';
+                                item.style.visibility = 'visible';
+                                item.classList.add('animate__animated', animationType);
+                            }, index * 90);
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -40px 0px'
+            });
+
+            document.querySelectorAll('section, header').forEach(sec => {
+                scrollObserver.observe(sec);
+            });
+        });
+    </script>
 </body>
+
 </html>
