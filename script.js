@@ -349,3 +349,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const topNavbar = document.getElementById('topNavbar');
+    if (topNavbar) {
+        const handleNavbarScroll = () => {
+            if (window.scrollY > 20) {
+                topNavbar.classList.add('scrolled');
+            } else {
+                topNavbar.classList.remove('scrolled');
+            }
+        };
+        window.addEventListener('scroll', handleNavbarScroll);
+        handleNavbarScroll();
+    }
+});

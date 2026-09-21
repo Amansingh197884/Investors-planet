@@ -46,15 +46,17 @@
 .career-image-collage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 24px;
+    align-items: center;
     position: relative;
+    padding: 20px 0;
 }
 
 .collage-item {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    height: 220px;
+    background-color: #ffffff;
 }
 
 .collage-item img {
@@ -69,21 +71,19 @@
 }
 
 .collage-item.item-1 {
-    height: 170px;
+    height: 200px;
 }
 
 .collage-item.item-2 {
-    height: 250px;
-    transform: translateY(30px);
+    height: 260px;
 }
 
 .collage-item.item-3 {
-    height: 250px;
-    transform: translateY(-20px);
+    height: 260px;
 }
 
 .collage-item.item-4 {
-    height: 170px;
+    height: 200px;
 }
 
 .hiring-content-section {
@@ -273,11 +273,13 @@
 @media (max-width: 991px) {
     .career-image-collage {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
+    .collage-item.item-1,
     .collage-item.item-2,
-    .collage-item.item-3 {
-        transform: translateY(0);
-        height: 200px;
+    .collage-item.item-3,
+    .collage-item.item-4 {
+        height: 220px;
     }
 }
 
