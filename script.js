@@ -191,41 +191,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    new Swiper('.partnersSwiper', {
-        slidesPerView: 2,
-        spaceBetween: 16,
-        speed: 800,
-        loop: true,
-        loopAdditionalSlides: 4,
-        watchSlidesProgress: true,
-        autoplay: {
-            delay: 2200,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-        navigation: {
-            nextEl: '.partners-btn-next',
-            prevEl: '.partners-btn-prev',
-        },
-        breakpoints: {
-            576: {
-                slidesPerView: 3,
-                spaceBetween: 18,
-            },
-            768: {
-                slidesPerView: 4,
-                spaceBetween: 20,
-            },
-            992: {
-                slidesPerView: 5,
-                spaceBetween: 22,
-            },
-            1200: {
-                slidesPerView: 5,
-                spaceBetween: 24,
-            }
-        }
-    });
+const sliderTrack = document.querySelector('.marketed-slider-track');
+
+sliderTrack.addEventListener('mouseenter', function() {
+    sliderTrack.style.animationPlayState = 'paused';
+});
+
+sliderTrack.addEventListener('mouseleave', function() {
+    sliderTrack.style.animationPlayState = 'running';
+});
 
     new Swiper('.journalBlogsSwiper', {
         slidesPerView: 1.15,
