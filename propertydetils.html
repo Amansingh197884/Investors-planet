@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="UTF-8" />
@@ -34,10 +34,10 @@
         </a>
 
         <div class="center-nav-links">
-            <a href="index.html" class="nav-tab-item active">Home</a>
+            <a href="index.html" class="nav-tab-item">Home</a>
 
             <div class="nav-dropdown-wrapper">
-                <a href="#" class="nav-tab-item">
+                <a href="#overview-section" class="nav-tab-item active">
                     Property <i class="bi bi-chevron-down" style="font-size: 0.65rem;"></i>
                 </a>
                 <div class="nav-dropdown-menu">
@@ -46,18 +46,19 @@
                 </div>
             </div>
 
-            <a href="About.html" class="nav-tab-item">About Us</a>
-            <a href="Career.html" class="nav-tab-item">Career</a>
-            <a href="Testimonials.html" class="nav-tab-item">Testimonials</a>
-            <a href="Contact.html" class="nav-tab-item">Contact Us
-            </a>
+            <a href="#overview-section" class="nav-tab-item">Overview</a>
+            <a href="#pricing-section" class="nav-tab-item">Pricing</a>
+            <a href="#floorplan-section" class="nav-tab-item">Floor Plan</a>
+            <a href="#amenities-section" class="nav-tab-item">Amenities</a>
+            <a href="#gallery-section" class="nav-tab-item">Gallery</a>
+            <a href="#location-section" class="nav-tab-item">Location</a>
         </div>
 
         <div class="navbar-right-actions">
             <button class="nav-search-btn" title="Search" aria-label="Search">
                 <i class="bi bi-search"></i>
             </button>
-            <a href="Contact.html" class="nav-enquire-btn">
+            <a href="#enquiry-form-section" class="nav-enquire-btn">
                 Enquire Now <i class="bi bi-arrow-right"></i>
             </a>
 
@@ -74,20 +75,21 @@
         <button class="drawer-close-btn" id="drawerClose" aria-label="Close Navigation">&times;</button>
         <ul class="drawer-links">
             <li><a href="index.html" class="mobile-menu-link">Home</a></li>
-            <li><a href="Commercial.html" class="mobile-menu-link">Property - Commercial</a></li>
-            <li><a href="residental.html" class="mobile-menu-link">Property - Residential</a></li>
-            <li><a href="About.html" class="mobile-menu-link">About Us</a></li>
-            <li><a href="Career.html" class="mobile-menu-link">Career</a></li>
-            <li><a href="Testimonials.html" class="mobile-menu-link">Testimonials</a></li>
-            <li><a href="Contact.html" class="mobile-menu-link">Contact Us</a></li>
+            <li><a href="#overview-section" class="mobile-menu-link">Overview</a></li>
+            <li><a href="#pricing-section" class="mobile-menu-link">Pricing</a></li>
+            <li><a href="#floorplan-section" class="mobile-menu-link">Floor Plan</a></li>
+            <li><a href="#amenities-section" class="mobile-menu-link">Amenities</a></li>
+            <li><a href="#gallery-section" class="mobile-menu-link">Gallery</a></li>
+            <li><a href="#location-section" class="mobile-menu-link">Location</a></li>
         </ul>
         <div class="drawer-contact-box">
-            <a href="Contact.html" class="nav-enquire-btn w-100 justify-content-center">
+            <a href="#enquiry-form-section" class="nav-enquire-btn w-100 justify-content-center">
                 Enquire Now <i class="bi bi-arrow-right"></i>
             </a>
         </div>
     </aside>
-    <!-- navbar end   -->
+    <!-- navbar end -->
+
     <!-- PROPERTY DETAILS PAGE BANNER -->
     <header class="property-detail-page-banner">
         <div class="banner-overlay"></div>
@@ -95,12 +97,12 @@
             <span class="section-top-tag animate__animated animate__fadeInDown">EXCLUSIVE LISTING</span>
             <h1 class="hero-title animate__animated animate__fadeInUp">M3M Project Noida</h1>
             <p class="banner-breadcrumb animate__animated animate__fadeInUp">
-                <a href="index.html">Home</a> <i class="bi bi-chevron-right mx-2"></i> <a href="property.html">Commercial</a> <i class="bi bi-chevron-right mx-2"></i> M3M Project Noida
+                <a href="index.html">Home</a> <i class="bi bi-chevron-right mx-2"></i> <a href="Commercial.html">Commercial</a> <i class="bi bi-chevron-right mx-2"></i> M3M Project Noida
             </p>
         </div>
     </header>
 
-    <section class="prop-detail-luxury-section">
+    <section class="prop-detail-luxury-section" id="overview-section">
         <div class="luxury-detail-container">
 
             <div class="luxury-hero-card">
@@ -135,6 +137,7 @@
 
                 <div class="luxury-left-flow">
 
+                    <!-- KEY TAKEAWAYS / HIGHLIGHTS -->
                     <div class="luxury-content-card">
                         <div class="section-card-heading">
                             <span class="mini-kicker">KEY TAKEAWAYS</span>
@@ -205,7 +208,7 @@
                     </div>
 
                     <!-- PRICING BREAKDOWN SECTION -->
-                    <div class="luxury-content-card">
+                    <div class="luxury-content-card" id="pricing-section">
                         <div class="section-card-heading">
                             <span class="mini-kicker">FLOOR-WISE RATES</span>
                             <h2>Pricing & Floor Plan Breakdown (BSP)</h2>
@@ -281,8 +284,38 @@
                         </div>
                     </div>
 
+                    <!-- FLOOR PLAN SECTION -->
+                    <div class="luxury-content-card" id="floorplan-section">
+                        <div class="section-card-heading">
+                            <span class="mini-kicker">LAYOUT STRUCTURE</span>
+                            <h2>Master & Floor Plans</h2>
+                        </div>
+                        <p class="lead-detail-p mb-4">
+                            Explore the meticulously planned layout structures designed to optimize retail visibility, customer movement, and high footfall density across all levels.
+                        </p>
+                        
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="p-3 border rounded-4 bg-light text-center">
+                                    <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Ground Floor Plan" class="img-fluid rounded-3 mb-3" style="height: 220px; object-fit: cover; width: 100%;">
+                                    <h5 class="fw-bold text-secondary">Ground Floor Retail Layout</h5>
+                                    <p class="small text-muted mb-2">Double height high street retail spaces with wide corridors.</p>
+                                    <a href="#enquiry-form-section" class="btn btn-sm btn-outline-primary rounded-pill px-4">Enquire Now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3 border rounded-4 bg-light text-center">
+                                    <img src="https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Food Court Layout" class="img-fluid rounded-3 mb-3" style="height: 220px; object-fit: cover; width: 100%;">
+                                    <h5 class="fw-bold text-secondary">Food Court & Dining Plan</h5>
+                                    <p class="small text-muted mb-2">Sprawling open-air alfresco dining and seating arrangement zones.</p>
+                                    <a href="#enquiry-form-section" class="btn btn-sm btn-outline-primary rounded-pill px-4">Enquire Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- AMENITIES SECTION -->
-                    <div class="luxury-content-card">
+                    <div class="luxury-content-card" id="amenities-section">
                         <div class="section-card-heading">
                             <span class="mini-kicker">INFRASTRUCTURE</span>
                             <h2>World-Class Amenities & Features</h2>
@@ -328,7 +361,7 @@
                     </div>
 
                     <!-- GALLERY SECTION -->
-                    <div class="luxury-content-card">
+                    <div class="luxury-content-card" id="gallery-section">
                         <div class="section-card-heading">
                             <span class="mini-kicker">PHOTO TOUR</span>
                             <h2>Project Visual Gallery</h2>
@@ -364,7 +397,7 @@
                     </div>
 
                     <!-- LOCATION SECTION -->
-                    <div class="luxury-content-card">
+                    <div class="luxury-content-card" id="location-section">
                         <div class="section-card-heading">
                             <span class="mini-kicker">OFFICIAL LOCATION</span>
                             <h2>Site Address & Connectivity Map</h2>
@@ -472,10 +505,10 @@
                             <h4 class="footer-col-title">Useful Links</h4>
                             <ul class="footer-links-list">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="property.html">Commercial</a></li>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="Commercial.html">Commercial</a></li>
                                 <li><a href="residental.html">Residential</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
