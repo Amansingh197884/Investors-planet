@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+        }, 400);
+    }
 
     const heroSwiper = new Swiper('.heroSwiper', {
         loop: true,
@@ -49,8 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (drawerOverlay) drawerOverlay.addEventListener('click', () => toggleMobileMenu(false));
 
     const topNavbar = document.getElementById('topNavbar');
-    const floatingCallBtn = document.getElementById('floatingCallBtn');
-    const heroSection = document.getElementById('heroSection');
 
     function updateScrollState() {
         const scrollPos = window.scrollY || window.pageYOffset;
@@ -62,25 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 topNavbar.classList.remove('scrolled');
             }
         }
-
-        if (floatingCallBtn && heroSection) {
-            const heroThreshold = heroSection.offsetHeight - 100;
-            if (scrollPos > heroThreshold) {
-                floatingCallBtn.classList.add('visible');
-            } else {
-                floatingCallBtn.classList.remove('visible');
-            }
-        }
     }
 
     window.addEventListener('scroll', updateScrollState, { passive: true });
     updateScrollState();
 
-    const scrollObserver = new IntersectionObserver((entries, observer) => {
+    const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const revealItems = entry.target.querySelectorAll('.scroll-reveal');
-
                 revealItems.forEach((item, index) => {
                     setTimeout(() => {
                         const animationType = item.dataset.animation || 'animate__fadeInUp';
@@ -88,15 +82,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         item.classList.add('animate__animated', animationType);
                     }, index * 95);
                 });
-
                 observer.unobserve(entry.target);
             }
         });
-    }, {
+    };
+
+    const scrollObserver = new IntersectionObserver(observerCallback, {
         threshold: 0.12,
         rootMargin: '0px 0px -40px 0px'
     });
 
+    document.querySelectorAll('.scroll-reveal-section').forEach(section => {
+        scrollObserver.observe(section);
+    });
+});
     const observedSections = [
         'about',
         'exploreCategories',
@@ -299,7 +298,6 @@ sliderTrack.addEventListener('mouseleave', function() {
         }
     });
 
-});
 
 document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('ipEnquireModal');
