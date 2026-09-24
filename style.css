@@ -809,7 +809,7 @@ body {
     .hero-slider-section {
         height: auto !important;
         min-height: auto !important;
-        padding-bottom: 30px;
+        /* padding-bottom: 30px; */
     }
 
     .hero-slider-section .swiper,
