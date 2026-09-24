@@ -437,15 +437,15 @@ body {
 }
 
 .slide-bg-1 {
-    background-image: url('https://i.pinimg.com/1200x/45/86/b0/4586b0d9102f564f08fa9430f4573162.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/45/86/b0/4586b0d9102f564f08fa9430f4573162.jpg');
 }
 
 .slide-bg-2 {
-    background-image: url('https://i.pinimg.com/1200x/27/e1/2a/27e12ae0dc2ce19062825816389b64d1.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/27/e1/2a/27e12ae0dc2ce19062825816389b64d1.jpg');
 }
 
 .slide-bg-3 {
-    background-image: url('images/hero.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.6)), url('images/hero.jpg');
 }
 
 .slide-bg {
@@ -473,18 +473,16 @@ body {
         transform: scale(1.12);
     }
 }
+    /* background-image:  url(images/banner-a.png); */
 
-.slide-overlay {
-    position: absolute;
+/* .slide-overlay {
+  position: absolute;
     inset: 0;
-    background: linear-gradient(180deg,
-            rgba(3, 8, 17, 0.55) 0%,
-            rgba(3, 8, 17, 0.15) 45%,
-            rgba(3, 8, 17, 0.45) 75%,
-            rgba(3, 8, 17, 0.85) 100%);
+    background: radial-gradient(circle at 50% 50%, rgba(3, 8, 17, 0.45) 0%, rgba(3, 8, 17, 0.8) 85%),
+        linear-gradient(to bottom, rgba(3, 8, 17, 0.75) 0%, rgba(3, 8, 17, 0.5) 45%, rgba(3, 8, 17, 0.92) 100%);
     z-index: 2;
     pointer-events: none;
-}
+} */
 
 .hero-content-wrapper {
     position: relative;
@@ -794,16 +792,16 @@ body {
 
 @media(max-width: 768px) {
     .slide-bg-1 {
-        background-image: url('https://i.pinimg.com/736x/d7/18/bb/d718bbf55196e0070be0d2eab8ab99cf.jpg') !important;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/d7/18/bb/d718bbf55196e0070be0d2eab8ab99cf.jpg') !important;
     }
 
     .slide-bg-2 {
-        background-image: url('https://i.pinimg.com/736x/93/71/70/9371705b82f3e661c9bec6e06eba54c9.jpg') !important;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/93/71/70/9371705b82f3e661c9bec6e06eba54c9.jpg') !important;
 
     }
 
     .slide-bg-3 {
-        background-image: url('https://i.pinimg.com/736x/26/1f/c4/261fc4e6150de6308c02520a469b472e.jpg') !important;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/26/1f/c4/261fc4e6150de6308c02520a469b472e.jpg') !important;
 
     }
 .slide-bg{
