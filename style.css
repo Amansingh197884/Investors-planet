@@ -473,11 +473,11 @@ body {
 }
 
 .slide-bg-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/27/e1/2a/27e12ae0dc2ce19062825816389b64d1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/6e/db/41/6edb41c8adb9e92674a3e397d6f3b1e4.jpg');
 }
 
 .slide-bg-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.6)), url('images/hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.2)), url('https://i.pinimg.com/1200x/8a/b1/15/8ab115c4e97257cc138cf04447363e39.jpg');
 }
 
 .slide-bg {
