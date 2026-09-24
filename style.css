@@ -822,7 +822,6 @@ body {
 .mobile-external-search-section {
     display: none;
 }
-
 @media(max-width: 768px) {
     .slide-bg-1 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/d7/18/bb/d718bbf55196e0070be0d2eab8ab99cf.jpg') !important;
@@ -830,38 +829,39 @@ body {
 
     .slide-bg-2 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/93/71/70/9371705b82f3e661c9bec6e06eba54c9.jpg') !important;
-
     }
 
     .slide-bg-3 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/26/1f/c4/261fc4e6150de6308c02520a469b472e.jpg') !important;
-
     }
 
     .slide-bg {
         background-position: top !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
     }
 
+    /* Fix: Banner ko proper height dena taaki image half ya cut na ho */
     .hero-slider-section {
         height: auto !important;
-        min-height: auto !important;
-        /* padding-bottom: 30px; */
+        min-height: 440px !important;
     }
 
     .hero-slider-section .swiper,
     .hero-slider-section .swiper-slide {
         height: auto !important;
-        min-height: auto !important;
+        min-height: 440px !important;
     }
 
     .hero-content-wrapper {
         position: relative !important;
-        height: auto !important;
+        height: 100% !important;
+        min-height: 440px !important;
         justify-content: center !important;
         align-items: center !important;
         text-align: center !important;
-        padding-top: 110px !important;
-        padding-bottom: 30px !important;
+        padding-top: 90px !important;
+        padding-bottom: 25px !important;
         padding-left: 15px !important;
         padding-right: 15px !important;
         width: 100%;
@@ -991,7 +991,6 @@ body {
         justify-content: center;
     }
 }
-
 /* new section start  */
 
 .about-us-section {
