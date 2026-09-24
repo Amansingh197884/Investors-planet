@@ -1,18 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const preloader = document.getElementById('preloader');
-    if (preloader) {
-        setTimeout(() => {
-            preloader.classList.add('fade-out');
-        }, 400);
-    }
 
     const heroSwiper = new Swiper('.heroSwiper', {
         loop: true,
         effect: 'fade',
-        crossFade: true,
-        speed: 950,
+        fadeEffect: {
+            crossFade: true
+        },
+        speed: 1500,
         autoplay: {
-            delay: 5500,
+            delay: 6500,
             disableOnInteraction: false,
         },
         on: {
@@ -55,6 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (drawerOverlay) drawerOverlay.addEventListener('click', () => toggleMobileMenu(false));
 
     const topNavbar = document.getElementById('topNavbar');
+    const floatingCallBtn = document.getElementById('floatingCallBtn');
+    const heroSection = document.getElementById('heroSection');
 
     function updateScrollState() {
         const scrollPos = window.scrollY || window.pageYOffset;
@@ -66,15 +64,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 topNavbar.classList.remove('scrolled');
             }
         }
+
+        if (floatingCallBtn && heroSection) {
+            const heroThreshold = heroSection.offsetHeight - 100;
+            if (scrollPos > heroThreshold) {
+                floatingCallBtn.classList.add('visible');
+            } else {
+                floatingCallBtn.classList.remove('visible');
+            }
+        }
     }
 
     window.addEventListener('scroll', updateScrollState, { passive: true });
     updateScrollState();
 
-    const observerCallback = (entries, observer) => {
+    const scrollObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const revealItems = entry.target.querySelectorAll('.scroll-reveal');
+
                 revealItems.forEach((item, index) => {
                     setTimeout(() => {
                         const animationType = item.dataset.animation || 'animate__fadeInUp';
@@ -82,20 +90,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         item.classList.add('animate__animated', animationType);
                     }, index * 95);
                 });
+
                 observer.unobserve(entry.target);
             }
         });
-    };
-
-    const scrollObserver = new IntersectionObserver(observerCallback, {
+    }, {
         threshold: 0.12,
         rootMargin: '0px 0px -40px 0px'
     });
 
-    document.querySelectorAll('.scroll-reveal-section').forEach(section => {
-        scrollObserver.observe(section);
-    });
-});
     const observedSections = [
         'about',
         'exploreCategories',
@@ -190,15 +193,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-const sliderTrack = document.querySelector('.marketed-slider-track');
+    const sliderTrack = document.querySelector('.marketed-slider-track');
+    if (sliderTrack) {
+        sliderTrack.addEventListener('mouseenter', function () {
+            sliderTrack.style.animationPlayState = 'paused';
+        });
 
-sliderTrack.addEventListener('mouseenter', function() {
-    sliderTrack.style.animationPlayState = 'paused';
-});
-
-sliderTrack.addEventListener('mouseleave', function() {
-    sliderTrack.style.animationPlayState = 'running';
-});
+        sliderTrack.addEventListener('mouseleave', function () {
+            sliderTrack.style.animationPlayState = 'running';
+        });
+    }
 
     new Swiper('.journalBlogsSwiper', {
         slidesPerView: 1.15,
@@ -235,8 +239,6 @@ sliderTrack.addEventListener('mouseleave', function() {
             landmarkIframe.setAttribute('src', '');
         });
     }
-
-
 
     new Swiper('.testimonialSwiper', {
         slidesPerView: 1,
@@ -298,40 +300,40 @@ sliderTrack.addEventListener('mouseleave', function() {
         }
     });
 
-
-document.addEventListener('DOMContentLoaded', () => {
+    // Enquire Modal Handlers
     const modal = document.getElementById('ipEnquireModal');
     const openBtns = document.querySelectorAll('.open-enquire-modal');
     const closeBtn = document.getElementById('ipCloseModal');
 
-    openBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            modal.classList.add('active');
+    if (modal) {
+        openBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.add('active');
+            });
         });
-    });
 
-    closeBtn.addEventListener('click', () => {
-        modal.classList.remove('active');
-    });
-
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.classList.remove('active');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                modal.classList.remove('active');
+            });
         }
-    });
-});
-document.addEventListener('DOMContentLoaded', () => {
-    const topNavbar = document.getElementById('topNavbar');
-    if (topNavbar) {
-        const handleNavbarScroll = () => {
-            if (window.scrollY > 20) {
-                topNavbar.classList.add('scrolled');
-            } else {
-                topNavbar.classList.remove('scrolled');
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
             }
-        };
-        window.addEventListener('scroll', handleNavbarScroll);
-        handleNavbarScroll();
+        });
+    }
+
+});
+
+window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+        preloader.classList.add("fade-out");
+        setTimeout(function () {
+            preloader.style.display = "none";
+        }, 800);
     }
 });
