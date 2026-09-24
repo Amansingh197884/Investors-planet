@@ -800,12 +800,16 @@ body {
 
     .slide-bg-2 {
         background-image: url('https://i.pinimg.com/736x/93/71/70/9371705b82f3e661c9bec6e06eba54c9.jpg') !important;
+
     }
 
     .slide-bg-3 {
         background-image: url('https://i.pinimg.com/736x/26/1f/c4/261fc4e6150de6308c02520a469b472e.jpg') !important;
-    }
 
+    }
+.slide-bg{
+background-position: top !important;
+}
     .hero-slider-section {
         height: auto !important;
         min-height: auto !important;
@@ -857,7 +861,7 @@ body {
     .mobile-marquee-container {
         display: block !important;
         width: 100%;
-        max-width: 310px;
+        max-width: 410px;
         overflow: hidden;
         white-space: nowrap;
         position: relative;
