@@ -844,7 +844,7 @@ body {
 
     .hero-slider-section {
         height: auto !important;
-        min-height: 85vh !important;
+        min-height: auto !important;
         /* padding-bottom: 30px; */
     }
 
