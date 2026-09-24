@@ -417,6 +417,38 @@ body {
 
 
 /* new section start  */
+#preloader {
+    position: fixed;
+    inset: 0;
+    background-color: #030811;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner-golden {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 3px solid rgba(197, 155, 39, 0.2);
+    border-top-color: #c59b27;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 /* Hero Section & Slider Styling */
 .hero-slider-section {
@@ -437,15 +469,15 @@ body {
 }
 
 .slide-bg-1 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/45/86/b0/4586b0d9102f564f08fa9430f4573162.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/45/86/b0/4586b0d9102f564f08fa9430f4573162.jpg');
 }
 
 .slide-bg-2 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/27/e1/2a/27e12ae0dc2ce19062825816389b64d1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/27/e1/2a/27e12ae0dc2ce19062825816389b64d1.jpg');
 }
 
 .slide-bg-3 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.6)), url('images/hero.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.6)), url('images/hero.jpg');
 }
 
 .slide-bg {
@@ -473,7 +505,8 @@ body {
         transform: scale(1.12);
     }
 }
-    /* background-image:  url(images/banner-a.png); */
+
+/* background-image:  url(images/banner-a.png); */
 
 /* .slide-overlay {
   position: absolute;
@@ -552,19 +585,19 @@ body {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: clamp(3.2rem, 7.5vw, 5.2rem);
     font-weight: 600;
-    line-height: 1.08;
-    margin-bottom: 16px;
+    line-height: 1.05;
+    margin-bottom: 10px;
     color: #ffffff;
     text-shadow: 0 4px 25px rgba(0, 0, 0, 0.85);
     width: 100%;
 }
 
 .hero-title .golden-line {
-    background: linear-gradient(135deg, #ffffff 20%, #f3d085 60%, #c59b27 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(205, 157, 83);
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
     display: block;
-    margin-top: 4px;
+    margin-top: 2px;
     filter: drop-shadow(0 2px 12px rgba(197, 155, 39, 0.35));
 }
 
@@ -792,21 +825,23 @@ body {
 
 @media(max-width: 768px) {
     .slide-bg-1 {
-        background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/d7/18/bb/d718bbf55196e0070be0d2eab8ab99cf.jpg') !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/d7/18/bb/d718bbf55196e0070be0d2eab8ab99cf.jpg') !important;
     }
 
     .slide-bg-2 {
-        background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/93/71/70/9371705b82f3e661c9bec6e06eba54c9.jpg') !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/93/71/70/9371705b82f3e661c9bec6e06eba54c9.jpg') !important;
 
     }
 
     .slide-bg-3 {
-        background-image:linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/26/1f/c4/261fc4e6150de6308c02520a469b472e.jpg') !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/736x/26/1f/c4/261fc4e6150de6308c02520a469b472e.jpg') !important;
 
     }
-.slide-bg{
-background-position: top !important;
-}
+
+    .slide-bg {
+        background-position: top !important;
+    }
+
     .hero-slider-section {
         height: auto !important;
         min-height: auto !important;
@@ -899,8 +934,13 @@ background-position: top !important;
     }
 
     @keyframes infiniteMarquee {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
     }
 
     .hero-content .hero-search-filter-box {
@@ -951,6 +991,7 @@ background-position: top !important;
         justify-content: center;
     }
 }
+
 /* new section start  */
 
 .about-us-section {
