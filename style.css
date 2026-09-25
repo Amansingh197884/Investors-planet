@@ -142,7 +142,7 @@ body {
 }
 
 .top-navbar-wrapper.scrolled .navbar-logo-tab img {
-    max-height: 40px;
+    max-height: 70px;
 }
 
 .center-nav-links {
@@ -469,7 +469,7 @@ body {
 }
 
 .slide-bg-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/45/86/b0/4586b0d9102f564f08fa9430f4573162.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/1200x/0e/75/fc/0e75fc96f62978a1380e2be0e4129bb8.jpg');
 }
 
 .slide-bg-2 {
