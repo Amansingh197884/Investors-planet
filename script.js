@@ -122,77 +122,75 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollObserver.observe(sec);
     });
 
-    new Swiper('.projectCategorySlider', {
-        slidesPerView: 1.15,
-        spaceBetween: 18,
-        speed: 800,
-        resistanceRatio: 0.85,
-        touchRatio: 1.1,
-        navigation: {
-            nextEl: '.project-next-btn',
-            prevEl: '.project-prev-btn',
-            disabledClass: 'swiper-button-disabled',
+ new Swiper('.spaceCategorySlider', {
+    slidesPerView: 1.15,
+    spaceBetween: 18,
+    speed: 800,
+    resistanceRatio: 0.85,
+    touchRatio: 1.1,
+    navigation: {
+        nextEl: '.space-next-btn',
+        prevEl: '.space-prev-btn',
+        disabledClass: 'swiper-button-disabled',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
         },
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 24,
-            },
-            1300: {
-                slidesPerView: 4,
-                spaceBetween: 24,
-            }
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+        },
+        1300: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+        }
+    }
+});
+ new Swiper('.devShowcaseSwiper', {
+    slidesPerView: 1.15,
+    slidesPerGroup: 1,
+    spaceBetween: 18,
+    speed: 850,
+    resistanceRatio: 0.85,
+    touchRatio: 1.1,
+    navigation: {
+        nextEl: '.msp-next-btn',
+        prevEl: '.msp-prev-btn',
+        disabledClass: 'swiper-button-disabled',
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 18,
+        },
+        768: {
+            slidesPerView: 3,
+            slidesPerGroup: 2,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 4,
+            slidesPerGroup: 3,
+            spaceBetween: 22,
+        },
+        1400: {
+            slidesPerView: 5,
+            slidesPerGroup: 4,
+            spaceBetween: 24,
+        }
+    }
+});
+
+document.querySelectorAll('.msp-luxury-card').forEach(card => {
+    card.addEventListener('click', function (e) {
+        if (!e.target.closest('.msp-glass-btn')) {
+            this.classList.toggle('active');
         }
     });
-
-    new Swiper('.devShowcaseSwiper', {
-        slidesPerView: 1.15,
-        slidesPerGroup: 1,
-        spaceBetween: 18,
-        speed: 850,
-        resistanceRatio: 0.85,
-        touchRatio: 1.1,
-        navigation: {
-            nextEl: '.dev-next-btn',
-            prevEl: '.dev-prev-btn',
-            disabledClass: 'swiper-button-disabled',
-        },
-        breakpoints: {
-            576: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-                spaceBetween: 18,
-            },
-            768: {
-                slidesPerView: 3,
-                slidesPerGroup: 2,
-                spaceBetween: 20,
-            },
-            1024: {
-                slidesPerView: 4,
-                slidesPerGroup: 3,
-                spaceBetween: 22,
-            },
-            1400: {
-                slidesPerView: 5,
-                slidesPerGroup: 4,
-                spaceBetween: 24,
-            }
-        }
-    });
-
-    document.querySelectorAll('.dev-luxury-card').forEach(card => {
-        card.addEventListener('click', function (e) {
-            if (!e.target.closest('.dev-view-prop-btn')) {
-                this.classList.toggle('active');
-            }
-        });
-    });
-
+});
     const sliderTrack = document.querySelector('.marketed-slider-track');
     if (sliderTrack) {
         sliderTrack.addEventListener('mouseenter', function () {
