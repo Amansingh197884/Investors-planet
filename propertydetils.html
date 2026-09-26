@@ -27,74 +27,81 @@
 
 <body>
 
-    <!-- navbar section -->
-    <nav class="top-navbar-wrapper" id="topNavbar">
-        <a href="index.html" class="navbar-logo-tab">
-            <img src="https://investorsplanet.co.in/assets/images/Logo/logo-in.jpeg" alt="Investors Planet Realty Logo">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner-golden"></div>
+    </div>
+
+<!-- navbar section -->
+<nav class="top-navbar-wrapper" id="topNavbar">
+    <a href="index.html" class="navbar-logo-tab">
+        <img src="https://investorsplanet.co.in/assets/images/Logo/logo-in.jpeg" alt="Investors Planet Realty Logo">
+    </a>
+
+    <div class="center-nav-links">
+        <a href="index.html" class="nav-tab-item">Home</a>
+
+        <div class="nav-dropdown-wrapper">
+            <a href="all.html" class="nav-tab-item">
+                Property <i class="bi bi-chevron-down" style="font-size: 0.65rem;"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+                <a href="Commercial.html" class="nav-dropdown-item">Commercial</a>
+                <a href="Residental.html" class="nav-dropdown-item">Residential</a>
+                <a href="new.html" class="nav-dropdown-item">New Launches</a>
+                <a href="plots.html" class="nav-dropdown-item">Plots</a>
+            </div>
+        </div>
+
+        <a href="About.html" class="nav-tab-item">About Us</a>
+        <a href="Career.html" class="nav-tab-item">Career</a>
+        <a href="Testimonials.html" class="nav-tab-item">Testimonials</a>
+        <a href="Contact.html" class="nav-tab-item">Contact Us</a>
+    </div>
+
+    <div class="navbar-right-actions">
+        <button class="nav-search-btn" title="Search" aria-label="Search">
+            <i class="bi bi-search"></i>
+        </button>
+        <a href="Contact.html" class="nav-enquire-btn">
+            Enquire Now <i class="bi bi-arrow-right"></i>
         </a>
 
-        <div class="center-nav-links">
-            <a href="index.html" class="nav-tab-item">Home</a>
+        <button class="mobile-hamburger-btn" id="menuToggle" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
 
-            <div class="nav-dropdown-wrapper">
-                <a href="#overview-section" class="nav-tab-item active">
-                    Property <i class="bi bi-chevron-down" style="font-size: 0.65rem;"></i>
-                </a>
-                <div class="nav-dropdown-menu">
-                    <a href="Commercial.html" class="nav-dropdown-item">Commercial</a>
-                    <a href="residental.html" class="nav-dropdown-item">Residential</a>
-                </div>
-            </div>
-
-            <a href="#overview-section" class="nav-tab-item">Overview</a>
-            <a href="#pricing-section" class="nav-tab-item">Pricing</a>
-            <a href="#floorplan-section" class="nav-tab-item">Floor Plan</a>
-            <a href="#amenities-section" class="nav-tab-item">Amenities</a>
-            <a href="#gallery-section" class="nav-tab-item">Gallery</a>
-            <a href="#location-section" class="nav-tab-item">Location</a>
-        </div>
-
-        <div class="navbar-right-actions">
-            <button class="nav-search-btn" title="Search" aria-label="Search">
-                <i class="bi bi-search"></i>
-            </button>
-            <a href="#enquiry-form-section" class="nav-enquire-btn">
-                Enquire Now <i class="bi bi-arrow-right"></i>
-            </a>
-
-            <button class="mobile-hamburger-btn" id="menuToggle" aria-label="Toggle Navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <div class="drawer-overlay" id="drawerOverlay"></div>
-    <aside class="mobile-nav-drawer" id="mobileDrawer">
-        <button class="drawer-close-btn" id="drawerClose" aria-label="Close Navigation">&times;</button>
-        <ul class="drawer-links">
-            <li><a href="index.html" class="mobile-menu-link">Home</a></li>
-            <li><a href="#overview-section" class="mobile-menu-link">Overview</a></li>
-            <li><a href="#pricing-section" class="mobile-menu-link">Pricing</a></li>
-            <li><a href="#floorplan-section" class="mobile-menu-link">Floor Plan</a></li>
-            <li><a href="#amenities-section" class="mobile-menu-link">Amenities</a></li>
-            <li><a href="#gallery-section" class="mobile-menu-link">Gallery</a></li>
-            <li><a href="#location-section" class="mobile-menu-link">Location</a></li>
-        </ul>
-        <div class="drawer-contact-box">
-            <a href="#enquiry-form-section" class="nav-enquire-btn w-100 justify-content-center">
-                Enquire Now <i class="bi bi-arrow-right"></i>
-            </a>
-        </div>
-    </aside>
-    <!-- navbar end -->
-
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="mobile-nav-drawer" id="mobileDrawer">
+    <button class="drawer-close-btn" id="drawerClose" aria-label="Close Navigation">&times;</button>
+    <ul class="drawer-links">
+        <li><a href="index.html" class="mobile-menu-link">Home</a></li>
+        <li><a href="all.html" class="mobile-menu-link">All Properties</a></li>
+        <li><a href="Commercial.html" class="mobile-menu-link">Commercial</a></li>
+        <li><a href="Residental.html" class="mobile-menu-link">Residential</a></li>
+        <li><a href="new.html" class="mobile-menu-link">New Launches</a></li>
+        <li><a href="plots.html" class="mobile-menu-link">Plots</a></li>
+        <li><a href="About.html" class="mobile-menu-link">About Us</a></li>
+        <li><a href="Career.html" class="mobile-menu-link">Career</a></li>
+        <li><a href="Testimonials.html" class="mobile-menu-link">Testimonials</a></li>
+        <li><a href="Contact.html" class="mobile-menu-link">Contact Us</a></li>
+    </ul>
+    <div class="drawer-contact-box">
+        <a href="Contact.html" class="nav-enquire-btn w-100 justify-content-center">
+            Enquire Now <i class="bi bi-arrow-right"></i>
+        </a>
+    </div>
+</aside>
+<!-- navbar end -->
     <!-- PROPERTY DETAILS PAGE BANNER -->
     <header class="property-detail-page-banner">
         <div class="banner-overlay"></div>
         <div class="container text-center position-relative z-2">
-            <span class="section-top-tag animate__animated animate__fadeInDown">EXCLUSIVE LISTING</span>
+            <span class="section-top-tag text-white animate__animated animate__fadeInDown">EXCLUSIVE LISTING</span>
             <h1 class="hero-title animate__animated animate__fadeInUp">M3M Project Noida</h1>
             <p class="banner-breadcrumb animate__animated animate__fadeInUp">
                 <a href="index.html">Home</a> <i class="bi bi-chevron-right mx-2"></i> <a
@@ -194,24 +201,7 @@
                         </p>
                     </div>
 
-                    <!-- ABOUT DEVELOPER SECTION -->
-                    <div class="luxury-content-card developer-card-box">
-                        <div class="section-card-heading">
-                            <span class="mini-kicker">THE BUILDER LEGACY</span>
-                            <h2>About The Developer</h2>
-                        </div>
-                        <p class="lead-detail-p">
-                            M3M Group stands for Magnanimity, Manpower, and Moderation. Standing among the top real
-                            estate developers in India, M3M is known for transforming the real estate aesthetics of NCR
-                            with iconic residential and commercial landmarks.
-                        </p>
-                        <p class="body-detail-p mb-0">
-                            With a firm commitment to speed, innovation, and excellence, the group has successfully
-                            delivered world-class developments that offer unmatched financial returns and elite
-                            lifestyle experiences.
-                        </p>
-                    </div>
-
+    
                     <!-- PRICING BREAKDOWN SECTION -->
                     <div class="luxury-content-card" id="pricing-section">
                         <div class="section-card-heading">
@@ -392,7 +382,7 @@
                                 <span class="gallery-caption">Grand 300m Front Facade</span>
                             </div>
                             <div class="gallery-photo-item">
-                                <img src="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting-area.jpg?auto=compress&cs=tinysrgb&w=600"
+                                <img src="https://i.pinimg.com/736x/49/82/d8/4982d8383bb35c890755b0484cae3ea1.jpg"
                                     alt="Interior Lounge">
                                 <span class="gallery-caption">Retail Corridors</span>
                             </div>
@@ -437,6 +427,23 @@
                         </div>
                     </div>
 
+                <!-- ABOUT DEVELOPER SECTION -->
+                    <div class="luxury-content-card developer-card-box">
+                        <div class="section-card-heading">
+                            <span class="mini-kicker">THE BUILDER LEGACY</span>
+                            <h2>About The Developer</h2>
+                        </div>
+                        <p class="lead-detail-p">
+                            M3M Group stands for Magnanimity, Manpower, and Moderation. Standing among the top real
+                            estate developers in India, M3M is known for transforming the real estate aesthetics of NCR
+                            with iconic residential and commercial landmarks.
+                        </p>
+                        <p class="body-detail-p mb-0">
+                            With a firm commitment to speed, innovation, and excellence, the group has successfully
+                            delivered world-class developments that offer unmatched financial returns and elite
+                            lifestyle experiences.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- STICKY ENQUIRY SIDEBAR -->
@@ -501,72 +508,126 @@
         </div>
     </section>
 
-    <footer class="luxury-footer-section" id="siteFooter">
-        <div class="footer-main-wrap">
-            <div class="container-fluid px-lg-5 px-3">
-                <div class="row g-4 justify-content-between">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-brand-col">
-                            <a href="index.html" class="footer-logo-wrap text-decoration-none">
-                                <span class="brand-text-logo">INVESTORS PLANET</span>
-                                <span class="brand-sub">REALTY PVT LTD</span>
-                            </a>
-                            <p class="footer-about-text">
-                                Investors Planet Realty is a full-service company for all your real estate needs.
-                                Whether you're looking to buy or sell a home, invest in real estate, or need property
-                                management services.
-                            </p>
-                            <div class="footer-social-cluster mb-3">
-                                <a href="#" class="social-icon-btn"><i class="bi bi-facebook"></i></a>
-                                <a href="#" class="social-icon-btn"><i class="bi bi-instagram"></i></a>
-                                <a href="#" class="social-icon-btn"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="social-icon-btn"><i class="bi bi-youtube"></i></a>
-                            </div>
+    <!-- new   -->
+<footer class="real-estate-luxury-footer" id="siteFooter">
+    <div class="footer-ambient-glow"></div>
+    <div class="footer-base-overlay"></div>
+    <div class="footer-primary-wrap">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="row g-4 justify-content-between">
+
+                <div class="col-lg-4 col-md-6 scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="footer-brand-container">
+                        <a href="index.html" class="footer-logo-anchor text-decoration-none">
+                            <span class="footer-brand-title">INVESTORS PLANET</span>
+                            <span class="footer-brand-subtitle">REALTY PVT LTD</span>
+                        </a>
+                        <p class="footer-info-desc">
+                            Investors Planet Realty is a full-service company for all your real estate needs.
+                            Whether you're looking to buy or sell a home, invest in real estate, or need property
+                            management services.
+                        </p>
+
+                        <div class="footer-social-group mb-3">
+                            <a href="#" class="footer-social-icon-box" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="footer-social-icon-box" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="footer-social-icon-box" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="footer-social-icon-box" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-lg-2 col-md-6 col-6">
-                        <div class="footer-links-col">
-                            <h4 class="footer-col-title">Useful Links</h4>
-                            <ul class="footer-links-list">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="About.html">About Us</a></li>
-                                <li><a href="Commercial.html">Commercial</a></li>
-                                <li><a href="residental.html">Residential</a></li>
-                                <li><a href="Contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
+                <div class="col-lg-2 col-md-6 col-6 scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="footer-nav-column">
+                        <h4 class="footer-heading-title">Useful Links</h4>
+                        <ul class="footer-navigation-list">
+                            <li><a href="index.html"><i class="bi bi-chevron-right me-1"></i> Home</a></li>
+                            <li><a href="About.html"><i class="bi bi-chevron-right me-1"></i> About Us</a></li>
+                            <li><a href="Career.html"><i class="bi bi-chevron-right me-1"></i> Career</a></li>
+                            <li><a href="Testimonials.html"><i class="bi bi-chevron-right me-1"></i> Testimonials</a></li>
+                            <li><a href="Contact.html"><i class="bi bi-chevron-right me-1"></i> Contact Us</a></li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-contact-col">
-                            <h4 class="footer-col-title">Contact Info</h4>
-                            <div class="footer-contact-items">
-                                <div class="f-contact-item">
-                                    <i class="bi bi-telephone-fill f-contact-icon"></i>
-                                    <div class="f-contact-detail">
-                                        <span class="f-contact-label">Phone</span>
-                                        <a href="tel:+919555891638" class="f-link">+91 9555891638</a>
-                                    </div>
+                <div class="col-lg-2 col-md-6 col-6 scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="footer-nav-column">
+                        <h4 class="footer-heading-title">Properties</h4>
+                        <ul class="footer-navigation-list">
+                            <li><a href="Commercial.html"><i class="bi bi-chevron-right me-1"></i> Commercial</a></li>
+                            <li><a href="Residential.html"><i class="bi bi-chevron-right me-1"></i> Residential</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 scroll-reveal" data-animation="animate__fadeInUp">
+                    <div class="footer-contact-column">
+                        <h4 class="footer-heading-title">Contact Info</h4>
+
+                        <div class="footer-contact-box-list">
+                            <div class="footer-contact-row">
+                                <i class="bi bi-telephone-fill footer-contact-ico footer-social-icon-box"></i>
+                                <div class="footer-contact-info-block">
+                                    <span class="footer-contact-lbl">Phone</span>
+                                    <a href="tel:+919555891638" class="footer-contact-link">+91 9555891638</a>
                                 </div>
-                                <div class="f-contact-item">
-                                    <i class="bi bi-envelope-fill f-contact-icon"></i>
-                                    <div class="f-contact-detail">
-                                        <span class="f-contact-label">Email</span>
-                                        <a href="mailto:info@investorsplanet.co.in"
-                                            class="f-link">info@investorsplanet.co.in</a>
-                                    </div>
+                            </div>
+
+                            <div class="footer-contact-row">
+                                <i class="bi bi-envelope-fill footer-contact-ico footer-social-icon-box"></i>
+                                <div class="footer-contact-info-block">
+                                    <span class="footer-contact-lbl">Email</span>
+                                    <a href="mailto:info@investorsplanet.co.in" class="footer-contact-link">info@investorsplanet.co.in</a>
+                                </div>
+                            </div>
+
+                            <div class="footer-contact-row">
+                                <i class="bi bi-geo-alt-fill footer-contact-ico footer-social-icon-box"></i>
+                                <div class="footer-contact-info-block">
+                                    <span class="footer-contact-lbl">Address</span>
+                                    <p class="mb-0 text-white-50">G-08, D-216, Block-D, Sector-63, Noida, U.P.-201301</p>
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-lower-bar">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="row align-items-center gy-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="footer-copyright-text mb-0">
+                        Copyright © 2024 | <span class="footer-brand-highlight">Investors Planet</span>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-policy-links">
+                        <a href="#">Privacy Policy</a>
+                        <span class="footer-policy-sep">•</span>
+                        <a href="#">Terms & Conditions</a>
+                        <span class="footer-policy-sep">•</span>
+                        <a href="#">RERA Disclaimer</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom-bar text-center">
-            <p class="copyright-text mb-0">Copyright © 2024 | <span class="highlight-txt">Investors Planet</span></p>
-        </div>
-    </footer>
+    </div>
+</footer>
+
+<a href="tel:+919555891638" class="real-estate-floating-call" id="floatingCallBtn" aria-label="Call Us">
+    <div class="real-estate-call-pulse"></div>
+    <svg data-bbox="27.001 26.499 146.002 147" viewBox="0 0 200 200" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape">
+        <g>
+            <path d="M151.569 118.788a80.618 80.618 0 0 1-17.694-4.429c-6.259-2.364-13.376-.839-18.149 3.903l-6.221 6.252A102.071 102.071 0 0 1 75.47 90.318l6.23-6.26c4.706-4.783 6.225-11.942 3.873-18.23a81.74 81.74 0 0 1-4.414-17.823c-1.196-8.502-8.498-14.864-16.985-14.864l-.168.001H44.173c-.509 0-1.024.024-1.529.07-4.572.415-8.711 2.595-11.653 6.139-2.943 3.546-4.337 8.031-3.917 12.694 2.225 21.051 9.455 41.57 20.891 59.308 10.391 16.434 24.527 30.639 40.848 41.06 17.597 11.468 37.919 18.733 58.844 21.017.515.046 1.036.069 1.553.069h.06c9.478-.039 17.159-7.823 17.121-17.337v-19.879c.191-8.752-6.159-16.267-14.822-17.495zm6.878 17.449v19.941c.02 5.119-4.111 9.3-9.206 9.321a6.703 6.703 0 0 1-.801-.03c-19.623-2.143-38.748-8.98-55.339-19.792-15.374-9.816-28.664-23.171-38.451-38.65C43.872 90.31 37.069 71.005 34.982 51.261a9.253 9.253 0 0 1 2.107-6.779 9.172 9.172 0 0 1 6.271-3.302c.274-.025.549-.038.819-.038h19.958c4.586 0 8.512 3.417 9.149 7.948a89.818 89.818 0 0 0 4.848 19.549c1.264 3.379.448 7.222-2.063 9.773l-8.394 8.435a4.02 4.02 0 0 0-.645 4.811 110.047 110.047 0 0 0 41.147 41.349 3.951 3.951 0 0 0 4.768-.648l8.377-8.419a9.247 9.247 0 0 1 9.768-2.087 88.512 88.512 0 0 0 19.405 4.862c4.649.659 8.067 4.71 7.951 9.423l-.001.099zm-42.722-75.244c-2.153-.422-3.56-2.522-3.14-4.691.418-2.168 2.501-3.587 4.659-3.162 14.866 2.915 26.346 14.453 29.247 29.394.421 2.168-.984 4.269-3.137 4.693a3.937 3.937 0 0 1-.766.075 3.981 3.981 0 0 1-3.895-3.234c-2.278-11.728-11.293-20.786-22.968-23.075zm53.748 26.218a3.983 3.983 0 0 1-4.392-3.528c-2.917-26.076-23.08-46.31-49.034-49.208-2.181-.244-3.753-2.221-3.511-4.416.242-2.196 2.207-3.781 4.386-3.535 29.67 3.312 52.721 26.449 56.055 56.263.245 2.196-1.324 4.176-3.504 4.424z"></path>
+        </g>
+    </svg>
+</a>
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>

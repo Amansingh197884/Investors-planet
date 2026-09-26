@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observedSections = [
         'about',
+        'career',
         'exploreCategories',
         'mostSellingProjects',
         'marketedProjects',

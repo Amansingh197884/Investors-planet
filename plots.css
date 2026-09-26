@@ -5,7 +5,7 @@ html, body {
     overflow-y: auto !important;
 }
 
-.commercial-page-banner {
+.plots-page-banner {
     position: relative;
     background: url('https://d2dy9w7mmecm6m.cloudfront.net/dy-images/Home/IconicMasterpiece/cullinan_-_xWpN2bljojHt.webp') center/cover no-repeat;
     padding: 160px 0 90px;
@@ -28,18 +28,18 @@ html, body {
     text-decoration: none;
 }
 
-.commercial-multi-section {
+.commercial-grid-section {
     background-color: var(--light-bg);
     padding: 100px 0 !important;
 }
 
-.commercial-container {
+.property-container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
-.commercial-top-header {
+.property-header-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@ html, body {
     margin-bottom: 50px !important;
 }
 
-.header-content-left {
+.header-left {
     flex: 1;
     min-width: 280px;
 }
@@ -65,7 +65,7 @@ html, body {
     margin-bottom: 6px;
 }
 
-.main-heading-text {
+.main-title-serif {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: clamp(2.2rem, 4vw, 3.2rem);
     font-weight: 600;
@@ -73,7 +73,7 @@ html, body {
     margin-bottom: 8px;
 }
 
-.section-desc-text {
+.header-subtitle {
     font-family: 'Poppins', sans-serif;
     font-size: 0.92rem;
     color: var(--text-muted);
@@ -81,14 +81,14 @@ html, body {
     max-width: 550px;
 }
 
-.property-type-switcher {
+.header-right {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
 }
 
-.switcher-label {
+.switcher-tag {
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -96,7 +96,7 @@ html, body {
     text-transform: uppercase;
 }
 
-.switcher-buttons {
+.prop-type-pill-wrap {
     display: inline-flex;
     align-items: center;
     background: #e9eff5;
@@ -106,7 +106,7 @@ html, body {
     gap: 6px;
 }
 
-.prop-type-btn {
+.type-pill {
     font-family: 'Poppins', sans-serif;
     font-size: 0.84rem;
     font-weight: 500;
@@ -121,39 +121,25 @@ html, body {
     white-space: nowrap;
 }
 
-.prop-type-btn:hover {
+.type-pill:hover {
     color: var(--primary-color);
 }
 
-.prop-type-btn.active {
+.type-pill.active {
     background: var(--secondary-color);
     color: #ffffff !important;
     font-weight: 600;
     box-shadow: 0 4px 14px rgba(19, 78, 127, 0.3);
 }
 
-.prop-type-btn.active .badge-count {
-    color: var(--accent-gold-light);
-}
-
-.badge-count {
-    font-size: 0.76rem;
-    opacity: 0.85;
-}
-
-/* 4 * 4 Grid Layout */
-.commercial-grid-layout {
+.property-cards-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px !important;
     margin-bottom: 50px !important;
 }
 
-.commercial-grid-item {
-    display: flex;
-}
-
-.property-reference-card {
+.prop-grid-card {
     background: #ffffff;
     border-radius: 22px;
     overflow: hidden;
@@ -165,12 +151,12 @@ html, body {
     width: 100%;
 }
 
-.property-reference-card:hover {
+.prop-grid-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 18px 45px rgba(0, 162, 232, 0.15);
 }
 
-.card-image-wrapper {
+.card-img-box {
     position: relative;
     width: 100%;
     height: 220px;
@@ -178,18 +164,18 @@ html, body {
     background-color: #030811;
 }
 
-.card-image-wrapper img {
+.card-img-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.6s ease;
 }
 
-.property-reference-card:hover .card-image-wrapper img {
+.prop-grid-card:hover .card-img-box img {
     transform: scale(1.05);
 }
 
-.location-badge {
+.location-pill {
     position: absolute;
     top: 14px;
     left: 14px;
@@ -208,8 +194,10 @@ html, body {
     z-index: 3;
 }
 
-.location-badge i {
-    color: var(--primary-color);
+.location-pill i,
+.card-property-specs span i {
+    color: var(--primary-color) !important;
+    font-size: 0.9rem !important;
 }
 
 .card-hover-overlay {
@@ -226,36 +214,37 @@ html, body {
     z-index: 4;
 }
 
-.property-reference-card:hover .card-hover-overlay {
+.prop-grid-card:hover .card-hover-overlay {
     opacity: 1;
 }
 
 .view-property-btn {
-    background: var(--button-gradient-primary, #134e7f);
+    background: var(--button-gradient-primary, #134e7f) !important;
     color: #ffffff !important;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 0.85rem;
-    padding: 10px 22px;
-    border-radius: 50px;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transform: translateY(10px);
-    transition: transform 0.3s ease, background 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 162, 232, 0.3);
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 0.85rem !important;
+    padding: 10px 22px !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    transform: translateY(10px) !important;
+    transition: transform 0.3s ease, background 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(0, 162, 232, 0.3) !important;
 }
 
-.property-reference-card:hover .view-property-btn {
-    transform: translateY(0);
+.prop-grid-card:hover .view-property-btn {
+    transform: translateY(0) !important;
 }
 
 .view-property-btn:hover {
-    background: var(--button-gradient-hover, #00a2e8);
+    background: var(--button-gradient-hover, #00a2e8) !important;
+    color: #ffffff !important;
 }
 
-.card-content-panel {
+.card-body-box {
     padding: 22px;
     background: #ffffff;
     display: flex;
@@ -263,25 +252,29 @@ html, body {
     flex-grow: 1;
 }
 
-.panel-top-row {
-    margin-bottom: 6px;
-}
-
-.card-property-title {
+.prop-name {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 1.35rem;
     font-weight: 600;
     color: var(--secondary-color);
-    margin: 0;
+    margin-bottom: 12px;
 }
 
-.card-property-snippet {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.84rem;
-    color: var(--text-muted);
-    line-height: 1.6;
+.card-property-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
     margin-bottom: 16px;
     flex-grow: 1;
+}
+
+.card-property-specs span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .panel-footer-row {
@@ -307,78 +300,50 @@ html, body {
     position: relative !important;
     z-index: 10 !important;
     width: 100% !important;
-    /* margin-top: 40px !important; */
 }
 
 .scroll-reveal {
-    opacity: 0;
-    visibility: hidden;
-    will-change: transform, opacity;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
 }
 
 @media (max-width: 1200px) {
-    .commercial-grid-layout {
+    .property-cards-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 992px) {
-    .commercial-multi-section {
+    .commercial-grid-section {
         padding: 60px 0 !important;
     }
-    .commercial-grid-layout {
+    .property-cards-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px !important;
     }
 }
 
 @media (max-width: 576px) {
-    .commercial-grid-layout {
+    .property-cards-grid {
         grid-template-columns: 1fr;
     }
-    .commercial-top-header {
+    .property-header-row {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
     }
-    .property-type-switcher {
+    .header-right {
         width: 100%;
     }
-    .switcher-buttons {
+    .prop-type-pill-wrap {
         width: 100%;
         display: flex;
     }
-    .prop-type-btn {
+    .type-pill {
         flex: 1;
-        justify-content: center;
         text-align: center;
         padding: 8px 12px;
         font-size: 0.76rem;
     }
-}
-.scroll-reveal {
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: none !important;
-}   
-.card-property-specs {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    margin-bottom: 16px;
-    flex-grow: 1;
-}
-
-.card-property-specs span {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.card-property-specs span i {
-    color: var(--primary-color);
-    font-size: 0.9rem;
 }

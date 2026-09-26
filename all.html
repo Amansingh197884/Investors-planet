@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Investors|Planet| Realty</title>
+    <title>All Properties | Investors Planet Realty</title>
     <link rel="shortcut icon" href="images/logo.webp" type="image/x-icon">
+    <!-- links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="career.css">
+    <link rel="stylesheet" href="all.css">
 </head>
 
 <body>
@@ -94,204 +97,235 @@
     </div>
 </aside>
 <!-- navbar end -->
-    <header class="career-page-banner">
+    <!-- PAGE BANNER -->
+    <header class="all-prop-banner">
         <div class="banner-overlay"></div>
         <div class="container text-center position-relative z-2">
-            <span class="section-top-tag text-white animate__animated animate__fadeInDown">JOIN OUR GROWING TEAM</span>
-            <h1 class="hero-title animate__animated animate__fadeInUp">We Are Hiring</h1>
+            <span class="section-top-tag text-white animate__animated animate__fadeInDown">COMPLETE REAL ESTATE PORTFOLIO</span>
+            <h1 class="hero-title animate__animated animate__fadeInUp">All Properties</h1>
             <p class="banner-breadcrumb animate__animated animate__fadeInUp">
-                <a href="index.html">Home</a> <i class="bi bi-chevron-right mx-2"></i> Career
+                <a href="index.html">Home</a> <i class="bi bi-chevron-right mx-2"></i> All Properties
             </p>
         </div>
     </header>
 
-    <section class="career-what-we-do py-5">
-        <div class="container py-lg-4">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 scroll-reveal" data-animation="animate__fadeInLeft">
-                    <span class="section-top-tag">INVESTORS PLANET REALTY</span>
-                    <h2 class="section-unified-heading mb-4">WHAT WE DO</h2>
-                    <p class="about-desc mb-3">
-                        Investors Planet Realty recognizes that each investor has unique financial goals, investment
-                        opportunities and risk appetite. That's why we offer a variety of investment options that can be
-                        customized to your specific needs.
+    <!-- CONTENT SECTION WITH FILTER -->
+    <section class="commercial-grid-section py-5">
+        <div class="property-container">
+
+            <div class="property-header-row mb-4 scroll-reveal" data-animation="animate__fadeInUp">
+                <div class="header-left">
+                    <span class="sub-heading-text">EXPLORE & FILTER</span>
+                    <h2 class="main-title-serif">Find Your Dream Property</h2>
+                    <p class="header-subtitle">
+                        Browse through our complete collection of commercial, residential, new launches, and land parcels.
                     </p>
-                    <p class="about-desc mb-3">
-                        Whether it's a long-term investment strategy, short-term growth, or anything in between, we've
-                        got you covered. Our financial advisors will work with you to create an investment plan that
-                        meets your specific goals and risk appetite.
-                    </p>
-                    <p class="about-desc mb-4">
-                        We carefully evaluate your financial situation, investment goals and personal preferences to
-                        create an investment strategy that suits your needs.
-                    </p>
-                    <div class="wwd-features-row">
-                        <div class="wwd-feature-badge"><i class="bi bi-shield-check me-2"></i> Tailored Strategies</div>
-                        <div class="wwd-feature-badge"><i class="bi bi-graph-up-arrow me-2"></i> High-Return Growth
+                </div>
+            </div>
+
+            <!-- FILTER BUTTONS BAR -->
+            <div class="property-filter-bar mb-5 scroll-reveal" data-animation="animate__fadeInUp">
+                <button class="filter-btn active" data-filter="all">All Properties</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="launches">New Launches</button>
+                <button class="filter-btn" data-filter="plots">Plots</button>
+            </div>
+
+            <!-- PROPERTIES GRID -->
+            <div class="property-cards-grid">
+
+                <!-- Commercial Item -->
+                <div class="prop-grid-card" data-category="commercial">
+                    <div class="card-img-box">
+                        <img src="https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&w=700" alt="M3M Noida">
+                        <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+                        <div class="card-hover-overlay">
+                            <a href="propertydetils.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <div class="wwd-feature-badge"><i class="bi bi-headset me-2"></i> Dedicated Advisory</div>
+                    </div>
+                    <div class="card-body-box">
+                        <h4 class="prop-name">M3M Noida</h4>
+                        <div class="card-property-specs">
+                            <span><i class="bi bi-tag-fill"></i> ₹ 45 Lakh* Onwards</span>
+                            <span><i class="bi bi-rulers"></i> 500 - 2000 Sq.Ft.</span>
+                            <span><i class="bi bi-geo-alt"></i> Sector 72, Noida</span>
+                        </div>
+                        <div class="panel-footer-row">
+                            <span class="developer-tag">By Investors Planet</span>
+                            <span class="status-tag">Commercial</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 scroll-reveal" data-animation="animate__fadeInRight">
-                    <div class="career-image-collage">
-                        <div class="collage-item item-1">
-                            <img src="https://i.pinimg.com/736x/68/a8/88/68a88817c9050d8937019f63d39efa8c.jpg"
-                                alt="Cityscape">
+                <!-- Commercial Item -->
+                <div class="prop-grid-card" data-category="commercial">
+                    <div class="card-img-box">
+                        <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Fairfox EON Noida">
+                        <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+                        <div class="card-hover-overlay">
+                            <a href="propertydetils.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <div class="collage-item item-2">
-                            <img src="https://i.pinimg.com/736x/bc/b5/bd/bcb5bd6d1462b29dc8b7ea7b88413aa1.jpg"
-                                alt="Skyscraper">
+                    </div>
+                    <div class="card-body-box">
+                        <h4 class="prop-name">Fairfox EON Noida</h4>
+                        <div class="card-property-specs">
+                            <span><i class="bi bi-tag-fill"></i> ₹ 35 Lakh* Onwards</span>
+                            <span><i class="bi bi-rulers"></i> 400 - 1500 Sq.Ft.</span>
+                            <span><i class="bi bi-geo-alt"></i> Sector 140A, Noida</span>
                         </div>
-                        <div class="collage-item item-3">
-                            <img src="https://i.pinimg.com/736x/86/ad/a9/86ada907966bda42aa12473fe281c035.jpg"
-                                alt="Building">
-                        </div>
-                        <div class="collage-item item-4">
-                            <img src="https://i.pinimg.com/736x/12/d0/d7/12d0d7915646fde00a64f78d5f715e22.jpg"
-                                alt="Modern Architecture">
+                        <div class="panel-footer-row">
+                            <span class="developer-tag">By Investors Planet</span>
+                            <span class="status-tag">Commercial</span>
                         </div>
                     </div>
                 </div>
+
+                <!-- Residential Item -->
+                <div class="prop-grid-card" data-category="residential">
+                    <div class="card-img-box">
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=700" alt="ACE Group Noida">
+                        <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+                        <div class="card-hover-overlay">
+                            <a href="propertydetils.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body-box">
+                        <h4 class="prop-name">ACE Group Noida</h4>
+                        <div class="card-property-specs">
+                            <span><i class="bi bi-tag-fill"></i> ₹ 1.2 Cr* Onwards</span>
+                            <span><i class="bi bi-rulers"></i> 1500 - 3000 Sq.Ft.</span>
+                            <span><i class="bi bi-geo-alt"></i> Sector 150, Noida</span>
+                        </div>
+                        <div class="panel-footer-row">
+                            <span class="developer-tag">By Investors Planet</span>
+                            <span class="status-tag">Residential</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Residential Item -->
+                <div class="prop-grid-card" data-category="residential">
+                    <div class="card-img-box">
+                        <img src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=700" alt="T&T Group">
+                        <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Noida</span>
+                        <div class="card-hover-overlay">
+                            <a href="propertydetils.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body-box">
+                        <h4 class="prop-name">T&T Group</h4>
+                        <div class="card-property-specs">
+                            <span><i class="bi bi-tag-fill"></i> ₹ 85 Lakh* Onwards</span>
+                            <span><i class="bi bi-rulers"></i> 1200 - 2200 Sq.Ft.</span>
+                            <span><i class="bi bi-geo-alt"></i> Sector 150, Noida</span>
+                        </div>
+                        <div class="panel-footer-row">
+                            <span class="developer-tag">By Investors Planet</span>
+                            <span class="status-tag">Residential</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Launches Item -->
+                <div class="prop-grid-card" data-category="launches">
+                    <div class="card-img-box">
+                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Godrej Aristocrat">
+                        <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Sector 49, Gurgaon</span>
+                        <div class="card-hover-overlay">
+                            <a href="propertydetils.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body-box">
+                        <h4 class="prop-name">Godrej Aristocrat</h4>
+                        <div class="card-property-specs">
+                            <span><i class="bi bi-tag-fill"></i> ₹ 3.2 Cr* Onwards</span>
+                            <span><i class="bi bi-rulers"></i> 2600 - 4200 Sq.Ft.</span>
+                            <span><i class="bi bi-geo-alt"></i> Golf Course Ext.</span>
+                        </div>
+                        <div class="panel-footer-row">
+                            <span class="developer-tag">By Investors Planet</span>
+                            <span class="status-tag">New Launch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Launches Item -->
+                <div class="prop-grid-card" data-category="launches">
+                    <div class="card-img-box">
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=700" alt="M3M Crown">
+                        <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Sector 111, Gurgaon</span>
+                        <div class="card-hover-overlay">
+                            <a href="propertydetils.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body-box">
+                        <h4 class="prop-name">M3M Crown Luxury Residences</h4>
+                        <div class="card-property-specs">
+                            <span><i class="bi bi-tag-fill"></i> ₹ 2.5 Cr* Onwards</span>
+                            <span><i class="bi bi-rulers"></i> 2200 - 3800 Sq.Ft.</span>
+                            <span><i class="bi bi-geo-alt"></i> Dwarka Expressway</span>
+                        </div>
+                        <div class="panel-footer-row">
+                            <span class="developer-tag">By Investors Planet</span>
+                            <span class="status-tag">New Launch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plots Item -->
+                <div class="prop-grid-card" data-category="plots">
+                    <div class="card-img-box">
+                        <img src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Yamuna Expressway Plots">
+                        <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Yamuna Expressway</span>
+                        <div class="card-hover-overlay">
+                            <a href="propertydetils.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body-box">
+                        <h4 class="prop-name">Yamuna City Plotted Land</h4>
+                        <div class="card-property-specs">
+                            <span><i class="bi bi-tag-fill"></i> ₹ 45 Lakh* Onwards</span>
+                            <span><i class="bi bi-rulers"></i> 100 - 300 Sq.Yards</span>
+                            <span><i class="bi bi-geo-alt"></i> Near Jewar Airport</span>
+                        </div>
+                        <div class="panel-footer-row">
+                            <span class="developer-tag">By Investors Planet</span>
+                            <span class="status-tag">Plotted Land</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plots Item -->
+                <div class="prop-grid-card" data-category="plots">
+                    <div class="card-img-box">
+                        <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Sohna Road Plots">
+                        <span class="location-pill"><i class="bi bi-geo-alt-fill"></i> Sohna Road</span>
+                        <div class="card-hover-overlay">
+                            <a href="propertydetils.html" class="view-property-btn">View Property <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body-box">
+                        <h4 class="prop-name">Godrej Green Estates</h4>
+                        <div class="card-property-specs">
+                            <span><i class="bi bi-tag-fill"></i> ₹ 1.1 Cr* Onwards</span>
+                            <span><i class="bi bi-rulers"></i> 150 - 400 Sq.Yards</span>
+                            <span><i class="bi bi-geo-alt"></i> Sector 34, Sohna</span>
+                        </div>
+                        <div class="panel-footer-row">
+                            <span class="developer-tag">By Investors Planet</span>
+                            <span class="status-tag">Plotted Land</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </section>
 
-    <section class="hiring-content-section py-5 bg-light-custom">
-        <div class="container py-lg-4">
-            <div class="text-center mb-5 scroll-reveal" data-animation="animate__fadeInUp">
-                <span class="section-top-tag">CAREER OPPORTUNITIES</span>
-                <h2 class="section-unified-heading">Open Positions</h2>
-                <p class="text-muted">Explore our current job openings and become a part of our success story.</p>
-            </div>
-
-            <div class="career-layout-grid">
-
-                <div class="career-left-banner-card scroll-reveal" data-animation="animate__fadeInLeft">
-                    <div class="career-card-content">
-                        <div class="career-badge-icon">
-                            <i class="bi bi-briefcase-fill"></i>
-                        </div>
-                        <h3>Opportunities with us</h3>
-                        <p>
-                            We are always up to discover new talents, kindly mail us your resume and portfolio link to
-                        </p>
-                        <a href="mailto:info@investorsplanet.co.in"
-                            class="career-email-link">info@investorsplanet.co.in</a>
-                        <a href="tel:+919555891638" class="career-contact-btn">
-                            <span>Contact Us</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="career-jobs-list-wrap scroll-reveal" data-animation="animate__fadeInRight">
-
-                    <div class="career-job-row">
-                        <div class="job-tag-cell">
-                            <span class="job-type-pill">Full Time</span>
-                        </div>
-                        <div class="job-title-cell">
-                            <h4>Tele Callers</h4>
-                            <span>Immediate Hiring</span>
-                        </div>
-                        <div class="job-loc-cell">
-                            <i class="bi bi-geo-alt"></i> Head Office
-                        </div>
-                    </div>
-
-                    <div class="job-row-highlight">
-                        <div class="job-tag-cell">
-                            <span class="job-type-pill featured-pill">Full Time</span>
-                        </div>
-                        <div class="job-title-cell">
-                            <h4>Tele Sales</h4>
-                            <span>Immediate Hiring</span>
-                        </div>
-                        <div class="job-loc-cell text-white">
-                            <i class="bi bi-geo-alt text-white"></i> Corporate Office
-                        </div>
-                    </div>
-
-                    <div class="career-job-row">
-                        <div class="job-tag-cell">
-                            <span class="job-type-pill">Full Time</span>
-                        </div>
-                        <div class="job-title-cell">
-                            <h4>Sales Manager</h4>
-                            <span>Real Estate Experience Preferred</span>
-                        </div>
-                        <div class="job-loc-cell">
-                            <i class="bi bi-geo-alt"></i> Greater Noida, UP
-                        </div>
-                    </div>
-
-                    <div class="career-job-row">
-                        <div class="job-tag-cell">
-                            <span class="job-type-pill">Full Time</span>
-                        </div>
-                        <div class="job-title-cell">
-                            <h4>Portfolio Manager</h4>
-                            <span>Client & Investor Handling</span>
-                        </div>
-                        <div class="job-loc-cell">
-                            <i class="bi bi-geo-alt"></i> Noida, Sector 72
-                        </div>
-                    </div>
-
-                    <div class="career-job-row">
-                        <div class="job-tag-cell">
-                            <span class="job-type-pill">Full Time</span>
-                        </div>
-                        <div class="job-title-cell">
-                            <h4>Team Leaders</h4>
-                            <span>Leadership & Team Handling</span>
-                        </div>
-                        <div class="job-loc-cell">
-                            <i class="bi bi-geo-alt"></i> New Delhi, NCR
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="career-info-footer-box mt-5 scroll-reveal" data-animation="animate__fadeInUp">
-                <div class="row align-items-center g-4">
-                    <div class="col-lg-4">
-                        <div class="info-footer-item">
-                            <i class="bi bi-envelope-fill"></i>
-                            <div>
-                                <span class="footer-lbl">EMAIL RESUME</span>
-                                <a href="mailto:info@investorsplanet.co.in">info@investorsplanet.co.in</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="info-footer-item">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <div>
-                                <span class="footer-lbl">INTERVIEW ADDRESS</span>
-                                <p class="mb-0">G-08, D-216, Block-D, Sector-63, Noida, U.P.-201301</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="info-footer-item">
-                            <i class="bi bi-telephone-fill"></i>
-                            <div>
-                                <span class="footer-lbl">MR. ANUBHAV TYAGI</span>
-                                <a href="tel:+919555891638">+91 9555891638</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- new   -->
+    <!-- FOOTER -->
+     <!-- new   -->
 <footer class="real-estate-luxury-footer" id="siteFooter">
     <div class="footer-ambient-glow"></div>
     <div class="footer-base-overlay"></div>
@@ -409,28 +443,43 @@
             <path d="M151.569 118.788a80.618 80.618 0 0 1-17.694-4.429c-6.259-2.364-13.376-.839-18.149 3.903l-6.221 6.252A102.071 102.071 0 0 1 75.47 90.318l6.23-6.26c4.706-4.783 6.225-11.942 3.873-18.23a81.74 81.74 0 0 1-4.414-17.823c-1.196-8.502-8.498-14.864-16.985-14.864l-.168.001H44.173c-.509 0-1.024.024-1.529.07-4.572.415-8.711 2.595-11.653 6.139-2.943 3.546-4.337 8.031-3.917 12.694 2.225 21.051 9.455 41.57 20.891 59.308 10.391 16.434 24.527 30.639 40.848 41.06 17.597 11.468 37.919 18.733 58.844 21.017.515.046 1.036.069 1.553.069h.06c9.478-.039 17.159-7.823 17.121-17.337v-19.879c.191-8.752-6.159-16.267-14.822-17.495zm6.878 17.449v19.941c.02 5.119-4.111 9.3-9.206 9.321a6.703 6.703 0 0 1-.801-.03c-19.623-2.143-38.748-8.98-55.339-19.792-15.374-9.816-28.664-23.171-38.451-38.65C43.872 90.31 37.069 71.005 34.982 51.261a9.253 9.253 0 0 1 2.107-6.779 9.172 9.172 0 0 1 6.271-3.302c.274-.025.549-.038.819-.038h19.958c4.586 0 8.512 3.417 9.149 7.948a89.818 89.818 0 0 0 4.848 19.549c1.264 3.379.448 7.222-2.063 9.773l-8.394 8.435a4.02 4.02 0 0 0-.645 4.811 110.047 110.047 0 0 0 41.147 41.349 3.951 3.951 0 0 0 4.768-.648l8.377-8.419a9.247 9.247 0 0 1 9.768-2.087 88.512 88.512 0 0 0 19.405 4.862c4.649.659 8.067 4.71 7.951 9.423l-.001.099zm-42.722-75.244c-2.153-.422-3.56-2.522-3.14-4.691.418-2.168 2.501-3.587 4.659-3.162 14.866 2.915 26.346 14.453 29.247 29.394.421 2.168-.984 4.269-3.137 4.693a3.937 3.937 0 0 1-.766.075 3.981 3.981 0 0 1-3.895-3.234c-2.278-11.728-11.293-20.786-22.968-23.075zm53.748 26.218a3.983 3.983 0 0 1-4.392-3.528c-2.917-26.076-23.08-46.31-49.034-49.208-2.181-.244-3.753-2.221-3.511-4.416.242-2.196 2.207-3.781 4.386-3.535 29.67 3.312 52.721 26.449 56.055 56.263.245 2.196-1.324 4.176-3.504 4.424z"></path>
         </g>
     </svg>
-</a>
+</a>    <!-- BOOTSTRAP JS & FILTER JAVASCRIPT -->
+    <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-    const topNavbar = document.getElementById('topNavbar');
-    
-    if (topNavbar) {
-        const handleNavbarScroll = () => {
-            if (window.scrollY > 30) {
-                topNavbar.classList.add('scrolled');
-            } else {
-                topNavbar.classList.remove('scrolled');
-            }
-        };
+            const topNavbar = document.getElementById('topNavbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 30) {
+                    topNavbar.classList.add('scrolled');
+                } else {
+                    topNavbar.classList.remove('scrolled');
+                }
+            });
 
-        window.addEventListener('scroll', handleNavbarScroll);
-        handleNavbarScroll(); 
-    }
-});
+            // Filter Logic
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const propertyCards = document.querySelectorAll('.prop-grid-card');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    propertyCards.forEach(card => {
+                        const category = card.getAttribute('data-category');
+                        if (filterValue === 'all' || category === filterValue) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
     </script>
 </body>
-
 </html>

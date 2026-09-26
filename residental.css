@@ -342,4 +342,34 @@ html, body {
     opacity: 1 !important;
     visibility: visible !important;
     transform: none !important;
-}   
+}   .card-property-specs span i,
+.location-pill i {
+    color: var(--primary-color) !important;
+    font-size: 0.9rem !important;
+}
+
+.view-property-btn {
+    background: var(--button-gradient-primary, #134e7f) !important;
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 0.85rem !important;
+    padding: 10px 22px !important;
+    border-radius: 50px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    transform: translateY(10px) !important;
+    transition: transform 0.3s ease, background 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(0, 162, 232, 0.3) !important;
+}
+
+.prop-grid-card:hover .view-property-btn {
+    transform: translateY(0) !important;
+}
+
+.view-property-btn:hover {
+    background: var(--button-gradient-hover, #00a2e8) !important;
+    color: #ffffff !important;
+}
